@@ -10,11 +10,12 @@
 
 html{
     height: 100%;
+    -ms-text-size-adjust: 100%;
+  	-webkit-text-size-adjust: 100%;
+  	box-sizing: border-box;
 }
 
-body{
-	height: 100%;
-}
+
 *:focus {
 	outline: none;
 	-moz-outline-style: none;
@@ -37,11 +38,18 @@ textarea,input {
 }
 
 a{
+	text-decoration: none;
+	color: $base-color;
 	transition: color 0.3s linear;
+	&:hover{
+		color: $alternate-color;
+	}
 }
 
 body {
-	background: $default-bg-color;
+	margin: 0;
+	height: 100%;
+	background: $default-site-color;
 	-webkit-font-smoothing: antialiased;
 	font-size: $default-size-font;
 	font-family: $default-font;
@@ -56,10 +64,10 @@ textarea,input {
 }
 
 
-::-webkit-input-placeholder {color:#a5a8ab;transition:all 0.3s ease;}
-::-moz-placeholder          {color:#a5a8ab;transition:all 0.3s ease;}
-:-moz-placeholder           {color:#a5a8ab;transition:all 0.3s ease;}
-:-ms-input-placeholder      {color:#a5a8ab;transition:all 0.3s ease;}
+::-webkit-input-placeholder {color:$base-color;transition:all 0.3s ease;}
+::-moz-placeholder          {color:$base-color;transition:all 0.3s ease;}
+:-moz-placeholder           {color:$base-color;transition:all 0.3s ease;}
+:-ms-input-placeholder      {color:$base-color;transition:all 0.3s ease;}
 
 
 
