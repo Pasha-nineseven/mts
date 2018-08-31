@@ -58,7 +58,7 @@
 	height: 100%;
 }
 .container-fluid{
-	max-width: 1170px;
+	max-width: 1165px;
 	// padding: 0;
 	position: relative;
 	width: 100%;
@@ -68,11 +68,15 @@
 .page-content{
 	display: table-cell;
 	height: 100%;
-	padding: 40px 0;
+	padding: 36px 0 40px;
+}
+
+.page-title{
+	margin-bottom: 46px;
 }
 
 .breadcrumbs__wrap{
-	padding: 17px 0;
+	padding: 13px 0 20px 0;
 	background: url(../img/content/br-bg-grey.jpg) left bottom repeat-x;
 	font-size: 14px;
 	margin-bottom: 16px;
@@ -89,7 +93,7 @@ a.breadcrumbs__item{
 		content: '';
 		display: inline-block;
 		vertical-align: middle;
-		margin: 0 15px 0 16px;
+		margin: 0 9px 0 14px;
 		width: 6px;
 		height: 9px;
 		background: url(../img/svg/arrow-gr.svg) center no-repeat;
@@ -139,14 +143,14 @@ a.breadcrumbs__item{
 	}
 	h6{
 	    margin: 0;
-	    margin-bottom: 15px;
+	    margin-bottom: 12px;
 	    font-size: 18px;
 	    font-weight: normal;
 	    font-family: 'corpid-regular';
 	}
-		margin-bottom: 20px;
 	p{
 		margin: 0;
+		margin-bottom: 25px;
 	}
 	video{
 		max-width: 100%;
@@ -172,7 +176,7 @@ a.breadcrumbs__item{
 	ul{
 		margin: 0;
 	    padding: 0;
-	    margin-bottom: 20px;
+	    margin-bottom: 33px;
 	    list-style-position: inside;
 	    list-style-type: none;
 	    li{
@@ -189,9 +193,9 @@ a.breadcrumbs__item{
 	    }
 	}
 	li{
-		padding-left: 20px;
-		position: relative;
-		margin-bottom: 13px;
+		padding-left: 28px;
+	    position: relative;
+	    margin-bottom: 11px;
 	}
 	input[type="checkbox"]:not(:checked),
 	input[type="checkbox"]:checked{
@@ -202,7 +206,7 @@ a.breadcrumbs__item{
 	input[type="checkbox"]:checked + label{
 		position: relative;
 		cursor: pointer;
-		padding-left: 30px;
+		padding-left: 29px;
 		line-height: 16px;
 		display: inline-block;
 	}
@@ -245,7 +249,7 @@ a.breadcrumbs__item{
 }
 
 .checkbox-wrap{
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 	position: relative;
 	z-index: 1;	
 	&:last-child{
@@ -523,7 +527,8 @@ a.breadcrumbs__item{
 
 
 .page-aside{
-	padding-right: 28px;
+	// padding-right: 28px;
+	margin-top: 4px;
 }
 
 .page-aside__item{
@@ -536,7 +541,17 @@ a.breadcrumbs__item{
 			color: $alternate-color;
 			font-family: 'corpid-regular';
 			//border-bottom: 1px solid transparent;
-
+			&:after{
+				content: "";
+				display: inline-block;
+				width: 14px;
+				height: 25px;
+				background: url(../img/svg/aside-arrow.svg) no-repeat;
+				position: absolute;
+				right: 0;
+				top: 50%;
+				transform: translateY(-50%); 
+			}
 		}
 	}
 	&:last-child{
@@ -548,25 +563,26 @@ a.breadcrumbs__item{
 
 .page-aside__link{
 	display: block;
-	padding: 23px 20px 23px 0;
+	padding: 22px 20px 22px 0;
 	position: relative;
 	border-top: 1px solid #f2f2f2;
 }
 
 .page-aside__submenu{
 	font-size: 14px;
-	padding-bottom: 30px;
+	padding-bottom: 27px;
 }
 
 
 .accordeon__item{
 	border-bottom: 1px solid #e6e6e6;
-	padding: 25px 0;
+	padding: 17px 0;
 	&.active{
 		.accordeon__link{
 			color: #ec1d23;
 			&:after{
 				transform:rotate(-180deg);
+				background: url(../img/svg/b-arr-h.svg) center no-repeat;
 			}
 		}
 	}
@@ -577,32 +593,159 @@ a.breadcrumbs__item{
 
 .accordeon__info{
 	display: none;
-	padding-top: 20px;
+	padding-top: 17px;
 }
 
 .accordeon__link{
-	font-size: 24px;
 	color: #000;
 	display: block;
 	position: relative;
 	padding-right: 30px;
 	&:after{
 		content: "";
-		width: 14px;
-		height: 9px;
+		width: 16px;
+		height: 10px;
 		background: url(../img/svg/b-arr.svg) center no-repeat;
-		
-		background-size: cover;
 		position: absolute;
-		right: 8px;
-		    top: 10px;
-		transition:all 0.3s ease;
+		right: 6px;
+		    top: 8px;
+		//transition:all 0.1s ease;
+	}
+	&:hover{
+		&:after{
+			background: url(../img/svg/b-arr-h.svg) center no-repeat;
+		}
 	}
 }
 
 .accordeon{
 	margin-bottom: 30px;
 }
+
+
+.jq-selectbox{
+	width: 100%;
+    display: block;
+    position: relative;
+	select{
+		opacity: 0;
+		visibility: hidden;
+		position: absolute;
+		height: 100%;
+	}
+	&.opened{
+		.jq-selectbox__trigger-arrow{
+			transform: rotate(-180deg);
+		}
+	}
+}
+
+
+.jq-selectbox__select{
+	width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    color: #000;
+    border: 1px solid #e4e4e4;
+        border-bottom-color: #e4e4e4;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    height: 39px;
+    line-height: 39px;
+    padding: 0 30px 0 12px;
+    -webkit-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    font: inherit;
+    color: inherit;
+    background: #fff!important;
+    text-shadow:none;
+    position: relative;
+}
+.jq-selectbox__select-text{
+	height: 100%;
+	line-height: 39px;
+	color: #222222;
+}
+
+.jq-selectbox__select:active{
+	background: #fff;
+}
+.jq-selectbox.focused .jq-selectbox__select {
+    border: 1px solid #e4e4e4;
+}
+
+
+.jq-selectbox__dropdown ul::-webkit-scrollbar {
+    width: 8px;
+}
+ 
+.jq-selectbox__dropdown ul::-webkit-scrollbar-track {
+    // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    // border-radius: 5px;
+}
+ 
+.jq-selectbox__dropdown ul::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: rgba(0,0,0,0.3);
+}
+
+
+.jq-selectbox__trigger {
+    border-left: 0;
+    
+}
+
+.jq-selectbox__trigger-arrow{
+	border: 0;
+	width: 15px;
+    height: 9px;
+    background: url(../img/svg/s-arrow.svg) center no-repeat;
+    transition:all 0.3s ease;
+}
+
+
+.jq-selectbox__dropdown {
+        margin: -1px 0 0;
+    border: 1px solid #e4e4e4;
+    border-radius: 5px;
+    font: inherit;
+    position: absolute;
+    top: 100%!important;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            
+    ul{
+    	margin: 0;
+    	li{
+			padding-left: 12px;
+			margin-bottom: 0;
+			color: #333;
+			background: #fff;
+			transition:all 0.3s ease;
+			border-bottom: 1px solid #e4e4e4;
+			    white-space: normal;
+			&:before{
+				display: none;
+			}
+			&:hover{
+				background: #f5f5f5;
+				color: #333;
+			}
+    	}
+    }
+}
+
+.jq-selectbox li.selected{
+	background: #f5f5f5;
+	color: #333;
+}
+
+
+.jq-selectbox__dropdown ul{
+	max-height: 250px;
+    overflow-y: auto;
+}
+
+
 
 @import "components/footer";
 

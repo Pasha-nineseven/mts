@@ -9,13 +9,13 @@ $(document).ready(function() {
 	$("body").on("click", ".js-top-links__link--submenu", function(e){
 		e.preventDefault();
 
-		$('.top-links__submenu').fadeToggle();
+		$(this).parents('.top-links__item--sub,.cabinet-toggle').find('.top-links__submenu').fadeToggle(200);
 	});
 	$(document).click(function (e){
-		var div = $(".top-links__item--sub");
+		var div = $(".top-links__item--sub,.cabinet-toggle");
 		if (!div.is(e.target)
 		    && div.has(e.target).length === 0) {
-			$('.top-links__submenu').fadeOut();
+			$('.top-links__submenu').fadeOut(100);
 		}
 	});
 
@@ -94,6 +94,61 @@ $(document).ready(function() {
 		$(this).parents('.accordeon__item').toggleClass('active');
 		$(this).next('.accordeon__info').slideToggle();
 	})
+
+
+
+
+
+
+	//MENU-MOBILE
+    $('body').on('click','.js-menu-btn', function(e){
+		e.preventDefault();
+		$(this).toggleClass('active');
+		$('.menu-mobile').slideToggle();
+		$('.menu-mobile__bg').fadeToggle();
+	});
+
+	$('body').on('click','.menu-mobile__bg', function(e){
+		e.preventDefault();
+		$('.menu-btn').removeClass('active');
+		$('.menu-mobile').slideUp();
+		$(this).fadeOut();
+	});
+
+
+	//FOOTER-MENU-MOBILE
+	var $select = $('<select class="fs"></select>');
+	$('.page-footer-menu-box').prepend($select);
+	// Cycle over menu links
+	$('a.page-footer-menu__title').each(function(){
+	  	var $anchor = $(this);
+	  	// Create an option
+	  	var $option = $('<option></option>');
+	  	// Deal with selected options depending on current page
+	  	// if($anchor.hasClass('selected')) {
+	   //  	$option.prop('selected', true);
+	  	// }
+	  	// $option.first().prop("selected", "selected");
+	  	// Option's value is the href
+	  	$option.val($anchor.attr('data-title'));
+	  	// Option's text is the text of link
+	  	$option.text($anchor.text());
+	  	// Append option to <select>
+	  	$select.append($option);
+	});
+	$select.change(function(){
+	  	$('.page-footer-menu__list').hide();
+    	$('#' + $(this).val()).show();
+	  	console.log($select.val());
+	});
+
+
+
+	//SELECT-CUSTOM
+	if ($('.fs').length>0) {
+		$('.fs').styler();
+	}
+
 });
 
 

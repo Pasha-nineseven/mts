@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="15.56" height="9.186" viewBox="0 0 15.56 9.186">
+<svg xmlns="http://www.w3.org/2000/svg" width="13.406" height="24.031" viewBox="0 0 13.406 24.031">
   <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
 <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -30,10 +30,10 @@
 <defs>
     <style>
       .cls-1 {
-        fill: #7a7a7a;
+        fill: #e40613;
         fill-rule: evenodd;
       }
     </style>
   </defs>
-  <path id="Фигура_952_копия_6" data-name="Фигура 952 копия 6" class="cls-1" d="M1350.28,999.5l-6.37,6.36h0l-1.41,1.42-7.78-7.78,1.41-1.415,6.37,6.365,6.36-6.365Z" transform="translate(-1334.72 -998.094)"/>
+  <path id="Стрелка" class="cls-1" d="M473.3,621.978l-1.414,1.414h0L461.275,634l-1.416-1.414,10.608-10.606-10.608-10.607,1.416-1.414,10.606,10.607h0Z" transform="translate(-459.875 -609.969)"/>
 </svg>
