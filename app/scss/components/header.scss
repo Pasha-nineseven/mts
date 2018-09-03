@@ -307,8 +307,8 @@
 		width: 1px;
 		height: 44px;
 		position: absolute;
-		left: -20px;
-		top: -4px;
+		left: -30px;
+		top: -5px;
 		background: #ebebeb;
 	}
 	&.active{
@@ -373,9 +373,8 @@
     position: absolute;
     background: #fff;
     width: 100%;
-    top: 100%;
-    left: 0;
-    border-top: 1px solid #ebebeb;
+    top: 0;
+    right: 0;
     display: none;
     z-index: 7;
 }

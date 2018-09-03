@@ -3678,8 +3678,8 @@ textarea, input {
     width: 1px;
     height: 44px;
     position: absolute;
-    left: -20px;
-    top: -4px;
+    left: -30px;
+    top: -5px;
     background: #ebebeb; }
   .menu-btn.active .burger-icon {
     background-color: transparent; }
@@ -3735,9 +3735,8 @@ textarea, input {
   position: absolute;
   background: #fff;
   width: 100%;
-  top: 100%;
-  left: 0;
-  border-top: 1px solid #ebebeb;
+  top: 0;
+  right: 0;
   display: none;
   z-index: 7; }
 
@@ -3797,37 +3796,43 @@ a.breadcrumbs__item:after {
     margin-bottom: 20px;
     font-size: 55px;
     font-weight: normal;
-    font-family: 'corpid-regular'; }
+    font-family: 'corpid-regular';
+    line-height: 1; }
   .workarea h2 {
     margin: 0;
     margin-bottom: 18px;
     font-size: 39.6px;
     font-weight: normal;
-    font-family: 'corpid-regular'; }
+    font-family: 'corpid-regular';
+    line-height: 1; }
   .workarea h3 {
     margin: 0;
     margin-bottom: 15px;
     font-size: 30.8px;
     font-weight: normal;
-    font-family: 'corpid-regular'; }
+    font-family: 'corpid-regular';
+    line-height: 1; }
   .workarea h4 {
     margin: 0;
     margin-bottom: 15px;
     font-size: 24.2px;
     font-weight: normal;
-    font-family: 'corpid-regular'; }
+    font-family: 'corpid-regular';
+    line-height: 1; }
   .workarea h5 {
     margin: 0;
     margin-bottom: 15px;
     font-size: 20px;
     font-weight: normal;
-    font-family: 'corpid-regular'; }
+    font-family: 'corpid-regular';
+    line-height: 1; }
   .workarea h6 {
     margin: 0;
     margin-bottom: 12px;
     font-size: 18px;
     font-weight: normal;
-    font-family: 'corpid-regular'; }
+    font-family: 'corpid-regular';
+    line-height: 1; }
   .workarea p {
     margin: 0;
     margin-bottom: 25px; }
@@ -4526,7 +4531,27 @@ a.breadcrumbs__item:after {
     margin-right: 7px;
     font-size: 14px; }
   .page-footer-menu__title {
-    padding-right: 30px; } }
+    padding-right: 30px; }
+  .top__wrap {
+    font-size: 14px; }
+  .top-links__link {
+    padding: 10px 0; }
+  .top-links__item {
+    margin-right: 15px; }
+    .top-links__item:last-child {
+      margin-right: 0; }
+  .top-links__item--sub .top-links__link,
+  .cabinet-link {
+    padding-right: 19px; }
+  .top-links__link--all {
+    padding-left: 15px; }
+  .top-links__link--all:before {
+    height: 15px;
+    top: 12px; }
+  .top-links__item--sub .top-links__link:after,
+  .cabinet-link:after {
+    border: 3px solid transparent;
+    right: 8px; } }
 
 @media screen and (max-width: 1024px) {
   .bottom {
@@ -4545,12 +4570,37 @@ a.breadcrumbs__item:after {
     .page-footer-menu__title br {
       display: none; }
   .page-footer-menu {
-    padding: 40px 0; } }
-
-@media screen and (max-width: 768px) {
+    padding: 40px 0; }
+  .layout--aside .page-title {
+    padding-left: 25%; }
+  .page-aside__link {
+    padding: 15px 20px 15px 0;
+    font-size: 16px; }
+  .top {
+    display: none; }
   .menu-btn {
     display: inline-block;
     vertical-align: middle; }
+  .top-search,
+  .page-header-links {
+    display: none; }
+  .page-header__inner {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .page-header__top {
+    padding: 21px 0; } }
+
+@media screen and (max-width: 768px) {
   .bottom-menu__item,
   .copyright {
     font-size: 12px; }
@@ -4564,7 +4614,12 @@ a.breadcrumbs__item:after {
   .page-footer-menu__item {
     margin-bottom: 20px; }
     .page-footer-menu__item:last-child {
-      margin-bottom: 0; } }
+      margin-bottom: 0; }
+  .layout--aside .page-title {
+    padding-left: 0; }
+  .page-aside {
+    margin-top: 0;
+    margin-bottom: 30px; } }
 
 @media screen and (max-width: 576px) {
   .page-footer-menu__wrap {
@@ -4593,4 +4648,6 @@ a.breadcrumbs__item:after {
   .external {
     margin-right: -10px; }
   .jq-selectbox li {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .page-header__slogan {
+    display: none; } }
