@@ -225,4 +225,23 @@
 	.page-header__slogan{
 		display: none;
 	}
+	.tab-button-outer {
+	    position: relative;
+	    z-index: 2;
+	    display: block;
+	}
+	  .tab-select-outer {
+	    display: none;
+	}
+	.tab-contents {
+	    position: relative;
+	    top: -1px;
+	    margin-top: 0;
+	}
+	.tab-button-outer {
+	  	display: none;
+	}
+	.tab-select-outer{
+		display: block;
+	}
 }

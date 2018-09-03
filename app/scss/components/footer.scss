@@ -101,7 +101,7 @@
 
 .external{
 	display: flex;
-	align-items:center;
+	// align-items:center;
 	padding-top: 10px;
 	flex-wrap: wrap;
 }
@@ -119,6 +119,7 @@
 .external__txt{
 	padding: 3px 8px;
 	display: flex;
+	align-items: center;
 }
 
 .external__wrap{
@@ -139,6 +140,11 @@
 	min-width: 37px;
 	display: inline-block;
 	text-align: center;
+	img{
+		max-width: 20px;
+		height: auto;
+		max-height: 100%;
+	}
 }
 
 
