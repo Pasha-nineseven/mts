@@ -16,11 +16,46 @@
 	</head>
 	<body>
 		<!--LAYOUT-->
-		<div class="layout">
+		<div class="layout layout--index">
 			<header class="page-header">
 				<div class="top">
 					<div class="container-fluid">
-						top
+						<div class="top__wrap">
+							<div class="top-links">
+								<div class="top-links__item">
+									<a href="#" class="top-links__link active">Частным клиентам</a>
+								</div>
+								<div class="top-links__item">
+									<a href="#" class="top-links__link">Бизнесу</a>
+								</div>
+								<div class="top-links__item top-links__item--sub">
+									<a href="#" class="top-links__link top-links__link--all js-top-links__link--submenu">Все сайты</a>
+									<div class="top-links__submenu">
+										<a href="#">Госзаказчикам</a>
+										<a href="#">О компании</a>
+										<a href="#">МТС/Медиа</a>
+									</div>
+								</div>
+							</div>
+							<div class="top-middle">
+								<a href="#" class="replenish">Пополнить</a>
+								<div class="cabinet-toggle">
+									<a href="#" class="cabinet-link js-top-links__link--submenu">Личный кабинет</a>
+									<div class="top-links__submenu">
+										<a href="#">Ссылка 1</a>
+										<a href="#">Ссылка 2</a>
+										<a href="#">Ссылка 3</a>
+									</div>
+								</div>
+							</div>
+							<div class="top-toggle">
+								<div class="top-lang">
+									<a href="#" class="top-lang__link">by</a>
+									<a href="#" class="top-lang__link">en</a>
+								</div>
+								<a href="#" class="vis-impaired">Для слабовидящих</a>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="container-fluid">
@@ -28,7 +63,7 @@
 						<div class="page-header__top">
 							<a href="#" class="page-header__logo">
 								<img src="img/content/logo.jpg" alt="">
-								<span class="page-header__slogan">Ведите бизнес вперёд</span>
+								<span class="page-header__slogan">Повод стать ближе!</span>
 							</a>
 							<div class="top-search">
 								<form action="#" method="post">
@@ -37,143 +72,397 @@
 								</form>
 							</div>
 						</div>
-						<div class="top-links">
-							<a href="#" class="top-links__item">
-								<span class="top-links__icon"></span>
+						<div class="page-header-links">
+							<a href="#" class="page-header-links__item">
+								<span class="page-header-links__icon">
+									<img src="img/svg/mts16-header-icon_mobile.svg" alt="">
+								</span>
 								Тарифы и услуги
 							</a>
-							<a href="#" class="top-links__item">
-								<span class="top-links__icon"></span>
+							<a href="#" class="page-header-links__item">
+								<span class="page-header-links__icon">
+									<img src="img/svg/interface.svg" alt="">
+								</span>
 								Финансовые и информационные сервисы
 							</a>
-							<a href="#" class="top-links__item">
-								<span class="top-links__icon"></span>
+							<a href="#" class="page-header-links__item">
+								<span class="page-header-links__icon">
+									<img src="img/svg/mts16-header-icon_basket.svg" alt="">
+								</span>
 								Смартфоны и гаджеты
 							</a>
-							<a href="#" class="top-links__item">
-								<span class="top-links__icon"></span>
+							<a href="#" class="page-header-links__item">
+								<span class="page-header-links__icon">
+									<img src="img/svg/mts16-header-icon_sales.svg" alt="">
+								</span>
 								Акции и привилегии
 							</a>
-							<a href="#" class="top-links__item">
-								<span class="top-links__icon"></span>
+							<a href="#" class="page-header-links__item">
+								<span class="page-header-links__icon">
+									<img src="img/svg/mts16-header-icon_support.svg" alt="">
+								</span>
 								Помощь
 							</a>
 						</div>
+						<a href="#" class="menu-btn js-menu-btn">
+							<span class="burger-icon"></span>
+							<span class="burger-txt">Меню</span>
+						</a>
 					</div>
 				</div>
 			</header>
+			<div class="menu-mobile">
+				<div class="container-fluid">
+					МОБИЛЬНОЕ МЕНЮ
+				</div>
+			</div>
+			<div class="menu-mobile__bg"></div>
 			<div class="wrapper">
 				<div class="page-content workarea">
-					<!-- CONTENT-PART -->
-					<div class="main-slider-wrap">
-						<div class="main-slider">
-							<div class="main-slider__item" style="background-image: url(img/content/main3.jpg);">
-								<div class="container-fluid">
-									<div class="main-slider__info">
-										<h1>
-											«Виртуальный сервер» — выгодно!
-										</h1>
-										<div class="main-slider__txt">
-											Безопасная альтернатива физическому серверу без дополнительных затрат на ИТ
+					<div class="container-fluid">
+						<!-- CONTENT-PART -->
+						<div class="main-slider-wrap">
+							<div class="main-slider">
+								<div class="main-slider__item" style="background-image: url(img/content/main3.jpg);">
+									<div class="container-fluid">
+										<div class="main-slider__info">
+											<h1>
+												«Виртуальный сервер» — выгодно!
+											</h1>
+											<div class="main-slider__txt">
+												Безопасная альтернатива физическому серверу без дополнительных затрат на ИТ
+											</div>
+											<a href="#application" class="btn js-popup-inline" data-effect="mfp-zoom-in">Заказать</a>
 										</div>
-										<a href="#application" class="btn js-popup-inline" data-effect="mfp-zoom-in">Заказать</a>
+									</div>
+								</div>
+								<div class="main-slider__item" style="background-image: url(img/content/main2.jpg);">
+									<div class="container-fluid">
+										<div class="main-slider__info">
+											<h1>
+												Test 1 Test1
+											</h1>
+											<div class="main-slider__txt">
+												Test test test test test test test test test test test test test test test test test test test  
+											</div>
+											<a href="#application" class="btn js-popup-inline" data-effect="mfp-zoom-in">Заказать</a>
+										</div>
+									</div>
+								</div>
+								<div class="main-slider__item" style="background-image: url(img/content/main3.jpg);">
+									<div class="container-fluid">
+										<div class="main-slider__info">
+											<h1>
+												Test 2 test2
+											</h1>
+											<div class="main-slider__txt">
+												Test test test test test test test test test test test test test test
+											</div>
+											<a href="#application" class="btn js-popup-inline" data-effect="mfp-zoom-in">Заказать</a>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="main-slider__item" style="background-image: url(img/content/main2.jpg);">
-								<div class="container-fluid">
-									<div class="main-slider__info">
-										<h1>
-											Test 1 Test1
-										</h1>
-										<div class="main-slider__txt">
-											Test test test test test test test test test test test test test test test test test test test  
-										</div>
-										<a href="#application" class="btn js-popup-inline" data-effect="mfp-zoom-in">Заказать</a>
-									</div>
-								</div>
+							<div class="main-slider-arrows">
+								<a href="#" class="main-slider__left"></a>
+								<a href="#" class="main-slider__right"></a>
 							</div>
-							<div class="main-slider__item" style="background-image: url(img/content/main3.jpg);">
-								<div class="container-fluid">
-									<div class="main-slider__info">
-										<h1>
-											Test 2 test2
-										</h1>
-										<div class="main-slider__txt">
-											Test test test test test test test test test test test test test test
+						</div>
+						<div class="main-hit">
+							<div class="container-fluid">
+								<div class="t-center">
+									<h2>Хит продаж</h2>
+								</div>
+								<div class="row main-hit__slider">
+									<div class="col-md-4 main-hit__item">
+										<div class="main-hit__inner">
+											<div class="main-hit__top">
+												<h2>Безлимитище</h2>
+											</div>
+											<div class="main-hit__info">
+												<div class="main-hit__title">
+													Настраивай тариф по-своему!
+												</div>
+												<div class="main-hit__add">
+													Данные по тарифу «Мой Безлимитище»
+												</div>
+												<ul>
+													<li>
+														<span class="count">32</span> <span class="count">гб</span> на 30 суток
+														<span class="tooltip" title="При условии выбора параметров в первый месяц в приложении Мой МТС">?</span>
+													</li>
+													<li>
+														<span class="count">900</span> мин на все сети
+														<span class="tooltip" title="При условии выбора параметров в первый месяц в приложении Мой МТС">?</span>
+													</li>
+													<li>
+														Плати за то, что выбрал сам
+													</li>
+												</ul>
+												<div class="main-hit__price">
+													<span class="count">15,90</span> руб. за 30 суток
+												</div>
+												<div class="main-hit__prepayment">
+													<span class="count">3,00</span> Первоначальный авансовый платеж
+												</div>
+												<a href="#" class="btn">Подключить</a>
+											</div>
 										</div>
-										<a href="#application" class="btn js-popup-inline" data-effect="mfp-zoom-in">Заказать</a>
+									</div>
+									<div class="col-md-4 main-hit__item">
+										<div class="main-hit__inner">
+											<div class="main-hit__top">
+												<h2>Безлимитище</h2>
+											</div>
+											<div class="main-hit__info">
+												<div class="main-hit__title">
+													Настраивай тариф по-своему!
+												</div>
+												<div class="main-hit__add">
+													Данные по тарифу «Мой Безлимитище»
+												</div>
+												<ul>
+													<li>
+														<span class="count">32</span> <span class="count">гб</span> на 30 суток
+														<span class="tooltip" title="При условии выбора параметров в первый месяц в приложении Мой МТС">?</span>
+													</li>
+													<li>
+														<span class="count">900</span> мин на все сети
+														<span class="tooltip" title="При условии выбора параметров в первый месяц в приложении Мой МТС">?</span>
+													</li>
+													<li>
+														Плати за то, что выбрал сам
+													</li>
+												</ul>
+												<div class="main-hit__price">
+													<span class="count">15,90</span> руб. за 30 суток
+												</div>
+												<div class="main-hit__prepayment">
+													<span class="count">3,00</span> Первоначальный авансовый платеж
+												</div>
+												<a href="#" class="btn">Подключить</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 main-hit__item">
+										<div class="main-hit__inner">
+											<div class="main-hit__top">
+												<h2>Безлимитище</h2>
+											</div>
+											<div class="main-hit__info">
+												<div class="main-hit__title">
+													Настраивай тариф по-своему!
+												</div>
+												<div class="main-hit__add">
+													Данные по тарифу «Мой Безлимитище»
+												</div>
+												<ul>
+													<li>
+														<span class="count">32</span> <span class="count">гб</span> на 30 суток
+														<span class="tooltip" title="При условии выбора параметров в первый месяц в приложении Мой МТС">?</span>
+													</li>
+													<li>
+														<span class="count">900</span> мин на все сети
+														<span class="tooltip" title="При условии выбора параметров в первый месяц в приложении Мой МТС">?</span>
+													</li>
+													<li>
+														Плати за то, что выбрал сам
+													</li>
+												</ul>
+												<div class="main-hit__price">
+													<span class="count">15,90</span> руб. за 30 суток
+												</div>
+												<div class="main-hit__prepayment">
+													<span class="count">3,00</span> Первоначальный авансовый платеж
+												</div>
+												<a href="#" class="btn">Подключить</a>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="main-slider-arrows">
-							<a href="#" class="main-slider__left"></a>
-							<a href="#" class="main-slider__right"></a>
+						<div class="main-actions">
+							<div class="container-fluid">
+								<div class="row main-actions__slider">
+									<a href="#" class="col-md-4 main-actions__item">
+										<div class="main-actions__img" style="background-image:url(img/content/service1.jpg)"></div>
+										<div class="main-actions__info">
+											<h4>Бесплатный розыгрыш призов</h4>
+											<div class="main-actions__txt">
+												Играй каждый день и выигрывай смартфон или планшет
+											</div>
+										</div>
+									</a>
+									<a href="#" class="col-md-4 main-actions__item">
+										<div class="main-actions__img" style="background-image:url(img/content/service2.jpg)"></div>
+										<div class="main-actions__info">
+											<h4>Бесплатный розыгрыш призов</h4>
+											<div class="main-actions__txt">
+												Играй каждый день и выигрывай смартфон или планшет
+											</div>
+										</div>
+									</a>
+									<a href="#" class="col-md-4 main-actions__item">
+										<div class="main-actions__img" style="background-image:url(img/content/service1.jpg)"></div>
+										<div class="main-actions__info">
+											<h4>Бесплатный розыгрыш призов</h4>
+											<div class="main-actions__txt">
+												Играй каждый день и выигрывай смартфон или планшет каждый день и выигрывай смартфон или каждый день и выигрывай
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
 						</div>
+						<div class="main-news">
+							<div class="container-fluid">
+								<div class="main-news__title">
+									<a href="#" class="main-news__subscribe">
+										Подписаться на новости
+									</a>
+									<h2>Новости</h2>
+								</div>
+								<div class="main-news-slider-wrap">
+									<div class="main-news-slider">
+										<a href="#" class="main-news-slider__item">
+											<div class="main-news-slider__inner">
+												<h3 class="main-news-slider__title">
+													Подписки стали доступнее на тарифных планах линеек «Smart»*, «ULTRA» и «X»
+												</h3>
+												<div class="main-news-slider__info">
+													С 31 июля 2018 года новым пользователям тарифных планов линеек 
+													«Smart»*, «ULTRA» и «X» станет проще подключать контентные услуги.
+												</div>
+												<div class="main-news-slider__bottom"></div>
+											</div>
+										</a>
+										<a href="#" class="main-news-slider__item">
+											<div class="main-news-slider__inner">
+												<h3 class="main-news-slider__title">Не так страшен роуминг...</h3>
+												<div class="main-news-slider__info">
+													Новым пользователям тарифных плагов линеек "Смарт", "Ультра" и "Х" станет проще подлючать контентные услуги.
+												</div>
+												<div class="main-news-slider__bottom"></div>
+											</div>
+										</a>
+										<a href="#" class="main-news-slider__item">
+											<div class="main-news-slider__inner">
+												<h3 class="main-news-slider__title">
+													Подписки стали доступнее на тарифных планах линеек «Smart»*, «ULTRA» и «X»
+												</h3>
+												<div class="main-news-slider__info">
+													С 31 июля 2018 года новым пользователям тарифных планов линеек 
+													«Smart»*, «ULTRA» и «X» станет проще подключать контентные услуги.
+												</div>
+												<div class="main-news-slider__bottom"></div>
+											</div>
+										</a>
+										<a href="#" class="main-news-slider__item">
+											<div class="main-news-slider__inner">
+												<h3 class="main-news-slider__title">Не так страшен роуминг...</h3>
+												<div class="main-news-slider__info">
+													Новым пользователям тарифных плагов линеек "Смарт", "Ультра" и "Х" станет проще подлючать контентные услуги.
+												</div>
+												<div class="main-news-slider__bottom"></div>
+											</div>
+										</a>
+									</div>
+									<div class="slider-nav"></div>
+								</div>
+								<div class="main-news__all">
+									<a href="#">Все новости</a>
+								</div>
+							</div>
+						</div>
+						<!--end CONTENT-PART -->
 					</div>
-					<div class="main-news">
-						<div class="container-fluid">
-							<div class="main-news__title">
-								<a href="#" class="main-news__subscribe">
-									Подписаться на новости
-								</a>
-								<h2>Новости</h2>
-							</div>
-							<div class="main-news-slider-wrap">
-								<div class="main-news-slider">
-									<a href="#" class="main-news-slider__item">
-										<div class="main-news-slider__inner">
-											<h3 class="main-news-slider__title">Не так страшен роуминг...</h3>
-											<div class="main-news-slider__info">
-												Новым пользователям тарифных плагов линеек "Смарт", "Ультра" и "Х" станет проще подлючать контентные услуги.
-											</div>
-											<div class="main-news-slider__bottom"></div>
-										</div>
-									</a>
-									<a href="#" class="main-news-slider__item">
-										<div class="main-news-slider__inner">
-											<h3 class="main-news-slider__title">Не так страшен роуминг...</h3>
-											<div class="main-news-slider__info">
-												Новым пользователям тарифных плагов линеек "Смарт", "Ультра" и "Х" станет проще подлючать контентные услуги.
-											</div>
-											<div class="main-news-slider__bottom"></div>
-										</div>
-									</a>
-									<a href="#" class="main-news-slider__item">
-										<div class="main-news-slider__inner">
-											<h3 class="main-news-slider__title">Не так страшен роуминг...</h3>
-											<div class="main-news-slider__info">
-												Новым пользователям тарифных плагов линеек "Смарт", "Ультра" и "Х" станет проще подлючать контентные услуги.
-											</div>
-											<div class="main-news-slider__bottom"></div>
-										</div>
-									</a>
-									<a href="#" class="main-news-slider__item">
-										<div class="main-news-slider__inner">
-											<h3 class="main-news-slider__title">Не так страшен роуминг...</h3>
-											<div class="main-news-slider__info">
-												Новым пользователям тарифных плагов линеек "Смарт", "Ультра" и "Х" станет проще подлючать контентные услуги.
-											</div>
-											<div class="main-news-slider__bottom"></div>
-										</div>
-									</a>
-								</div>
-								<div class="slider-nav"></div>
-							</div>
-						</div>
-					</div>
-					<!--end CONTENT-PART -->
 				</div>
 			</div>
 			<footer class="page-footer">
 				<div class="page-footer-menu">
 					<div class="container-fluid">
-						<div class="row">
-							<div class="col-md-3 page-footer-menu__item">1</div>
-							<div class="col-md-3 page-footer-menu__item">2</div>
-							<div class="col-md-3 page-footer-menu__item">3</div>
-							<div class="col-md-3 page-footer-menu__item">4</div>
+						<div class="page-footer-menu-box">
+							<div class="row page-footer-menu__wrap">
+								<div class="col-md-3 col-sm-6 page-footer-menu__item">
+									<a href="#" class="page-footer-menu__title" data-title="communications">
+										Мобильная связь
+									</a>
+									<div class="page-footer-menu__list" id="communications">
+										<a href="#" class="page-footer-menu__link">Выбрать тариф</a>
+										<a href="#" class="page-footer-menu__link">Перенос номера</a>
+										<a href="#" class="page-footer-menu__link">Акции и бонусы</a>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6 page-footer-menu__item">
+									<a href="#" class="page-footer-menu__title" data-title="internet">
+										Домашний<br> интернет и ТВ
+									</a>
+									<div class="page-footer-menu__list" id="internet">
+										<a href="#" class="page-footer-menu__link">Услуги</a>
+										<a href="#" class="page-footer-menu__link">Акции</a>
+										<a href="#" class="page-footer-menu__link">Дополнительные услуги</a>
+										<a href="#" class="page-footer-menu__link">Подключение</a>
+										<a href="#" class="page-footer-menu__link">Оборудование</a>
+										<a href="#" class="page-footer-menu__link">ТВ и фильмы</a>
+										<a href="#" class="page-footer-menu__link">Информация</a>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6 page-footer-menu__item">
+									<a href="#" class="page-footer-menu__title" data-title="services">
+										Финансовые и информационные сервисы
+									</a>
+									<div class="page-footer-menu__list" id="services">
+										<a href="#" class="page-footer-menu__link">Платежи</a>
+										<a href="#" class="page-footer-menu__link">Развлечение и информация</a>
+										<a href="#" class="page-footer-menu__link">Управление системой охраны</a>
+										<a href="#" class="page-footer-menu__link">Оплата услуг</a>
+										<a href="#" class="page-footer-menu__link">Облачные решения</a>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6 page-footer-menu__item">
+									<a href="#" class="page-footer-menu__title" data-title="help">
+										Помощь
+									</a>
+									<div class="page-footer-menu__list" id="help">
+										<a href="#" class="page-footer-menu__link">Сервисы самообслуживания</a>
+										<a href="#" class="page-footer-menu__link">Обслуживание абонентов</a>
+										<a href="#" class="page-footer-menu__link">Полезная информация</a>
+									</div>
+
+									<div class="page-footer__external">
+										<span class="page-footer-menu__title">
+											Мой МТС
+										</span>
+										<div class="external">
+											<a href="#" class="external__item">
+												<div class="external__wrap">
+													<span class="external__icon">
+														<span class="external__inner">
+															1
+														</span>
+													</span>
+													<span class="external__txt">
+														Мой МТС на App Store
+													</span>
+												</div>
+											</a>
+											<a href="#" class="external__item">
+												<div class="external__wrap">
+													<span class="external__icon">
+														<span class="external__inner">
+															1
+														</span>
+													</span>
+													<span class="external__txt">
+														Мой МТС на Google play
+													</span>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -182,7 +471,7 @@
 						<div class="bottom__wrap">
 							<div class="socials">
 								<a href="#" class="socials__item">
-									<span class="socials__icon"></span>
+									<span class="socials__icon socials__icon--inst"></span>
 								</a>
 								<a href="#" class="socials__item">
 									<span class="socials__icon"></span>

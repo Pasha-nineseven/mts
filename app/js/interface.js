@@ -119,21 +119,11 @@ $(document).ready(function() {
 	//FOOTER-MENU-MOBILE
 	var $select = $('<select class="fs"></select>');
 	$('.page-footer-menu-box').prepend($select);
-	// Cycle over menu links
 	$('a.page-footer-menu__title').each(function(){
 	  	var $anchor = $(this);
-	  	// Create an option
 	  	var $option = $('<option></option>');
-	  	// Deal with selected options depending on current page
-	  	// if($anchor.hasClass('selected')) {
-	   //  	$option.prop('selected', true);
-	  	// }
-	  	// $option.first().prop("selected", "selected");
-	  	// Option's value is the href
 	  	$option.val($anchor.attr('data-title'));
-	  	// Option's text is the text of link
 	  	$option.text($anchor.text());
-	  	// Append option to <select>
 	  	$select.append($option);
 	});
 	$select.change(function(){
@@ -149,13 +139,23 @@ $(document).ready(function() {
 		$('.fs').styler();
 	}
 
+
+	//TOOLTIP
+	if ($('.tooltip').length>0) {
+		$('.tooltip').tooltipster();
+	};
+
+
+	mainNewsSliderStart();
+	mainHitSliderStart();
 });
 
 
 
 
 $(window).resize(function () {
-
+	mainNewsSliderStart();
+	mainHitSliderStart();
 });
 
 // $(window).load(function(){
@@ -163,7 +163,51 @@ $(window).resize(function () {
 // });
 
 // functions
+function mainNewsSliderStart() {
+	var $m_a = $('.main-actions__slider');
+	if ($('.main-actions__slider').length>0) {
+		if($(window).width() < 750) {
+			$m_a.not('.slick-initialized').slick({
+			  	infinite: true,
+			  	slidesToShow: 1,
+	            slidesToScroll: 1,
+	            arrows: false,
+	            lazyLoad: 'progressive',
+	            useTransform:true,
+	            "accessibility": false,
+	            infinite:true,
+	            dots:true,
+			});
+		} else{
+			if($m_a.hasClass('slick-initialized')) {
+				$m_a.slick("unslick");
+			}
+		}
+	}
+}
 
+function mainHitSliderStart() {
+	var $m_a = $('.main-hit__slider');
+	if ($('.main-hit__slider').length>0) {
+		if($(window).width() < 750) {
+			$m_a.not('.slick-initialized').slick({
+			  	infinite: true,
+			  	slidesToShow: 1,
+	            slidesToScroll: 1,
+	            arrows: false,
+	            lazyLoad: 'progressive',
+	            useTransform:true,
+	            "accessibility": false,
+	            infinite:true,
+	            dots:true,
+			});
+		} else{
+			if($m_a.hasClass('slick-initialized')) {
+				$m_a.slick("unslick");
+			}
+		}
+	}
+}
 
 // links pages
 $('body').append(

@@ -3,3 +3,13 @@
 		padding-left: calc(25% + 42px);
 	}
 }
+
+.layout--index{
+	.page-content{
+		padding: 0;
+		>.container-fluid{
+			max-width: 100%;
+			padding: 0; 
+		}
+	}
+}
