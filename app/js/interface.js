@@ -19,7 +19,6 @@ $(document).ready(function() {
 		}
 	});
 
-
 	//MAIN SLIDER
 	if ($('.main-slider').length>0) {
 		$('.main-slider').slick({
@@ -76,7 +75,7 @@ $(document).ready(function() {
                     }
                 },
                 {
-                    breakpoint: 700,
+                    breakpoint: 650,
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1,
@@ -86,19 +85,12 @@ $(document).ready(function() {
         });
     }
 
-
-
     //ACCORDEON
 	$("body").on("click", ".accordeon__link", function(e){
 		e.preventDefault();
 		$(this).parents('.accordeon__item').toggleClass('active');
 		$(this).next('.accordeon__info').slideToggle();
 	})
-
-
-
-
-
 
 	//MENU-MOBILE
     $('body').on('click','.js-menu-btn', function(e){
@@ -114,7 +106,6 @@ $(document).ready(function() {
 		$('.menu-mobile').slideUp();
 		$(this).fadeOut();
 	});
-
 
 	//FOOTER-MENU-MOBILE
 	var $select = $('<select class="fs"></select>');
@@ -132,17 +123,23 @@ $(document).ready(function() {
 	  	console.log($select.val());
 	});
 
-
-
 	//SELECT-CUSTOM
 	if ($('.fs').length>0) {
 		$('.fs').styler();
 	}
 
-
 	//TOOLTIP
 	if ($('.tooltip').length>0) {
-		$('.tooltip').tooltipster();
+		$('.tooltip').tooltipster({
+			animation: 'fade',
+   			delay: 100,
+		});
+	};
+
+
+	//PHONE-MASK
+	if ($('.js-mask').length>0) {
+		$(".js-mask").mask("(99) 9-99-99-99");
 	};
 
 
@@ -220,10 +217,10 @@ function mainNewsSliderStart() {
 function mainHitSliderStart() {
 	var $m_a = $('.main-hit__slider');
 	if ($('.main-hit__slider').length>0) {
-		if($(window).width() < 750) {
+		if($(window).width() < 1024) {
 			$m_a.not('.slick-initialized').slick({
 			  	infinite: true,
-			  	slidesToShow: 1,
+			  	slidesToShow: 2,
 	            slidesToScroll: 1,
 	            arrows: false,
 	            lazyLoad: 'progressive',
@@ -231,6 +228,15 @@ function mainHitSliderStart() {
 	            "accessibility": false,
 	            infinite:true,
 	            dots:true,
+	            responsive: [
+				    {
+				      breakpoint: 650,
+				      settings: {
+				        slidesToShow: 1,
+	            		slidesToScroll: 1,
+				      }
+				    },
+				]
 			});
 		} else{
 			if($m_a.hasClass('slick-initialized')) {

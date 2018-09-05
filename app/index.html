@@ -298,11 +298,11 @@
 							  	<div class="tab-select-outer">
 							  		<div class="container-fluid">
 									    <select class="fs" id="tab-select">
-											<option value="#tab01">Tab 1</option>
-											<option value="#tab02">Tab 2</option>
-											<option value="#tab03">Tab 3</option>
-											<option value="#tab04">Tab 4</option>
-											<option value="#tab05">Tab 5</option>
+											<option value="#tab01">Услуги связи</option>
+											<option value="#tab02">Домашний интернет</option>
+											<option value="#tab03">Рассрочка</option>
+											<option value="#tab04">Задолженность по л/с</option>
+											<option value="#tab05">Другие услуги ЕРИП</option>
 									    </select>
 								    </div>
 							  	</div>
@@ -311,6 +311,22 @@
 									<div class="container-fluid">
 										<div class="tab-contents__wrap">
 											<h3>Пополнить баланс без комиссии</h3>
+											<div class="balance-form">
+												<form action="#" method="post">
+													<div class="balance-form__inner">
+														<div class="balance-form__item balance-form__item--number">
+															<span class="balance-form__code">+375</span>
+															<input type="text" class="balance-form-input__number js-mask" placeholder="Номер телефона">
+														</div>
+														<div class="balance-form__item">
+															<input type="text" class="balance-form-input__sum" value="10">
+														</div>
+														<div class="balance-form__item balance-form__item--submit">
+															<input type="submit" value="Пополнить" class="balance-form__submit">
+														</div>
+													</div>
+												</form>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -364,7 +380,7 @@
 									</a>
 									<a href="#" class="main-links__item">
 										<div class="main-links__media">
-											<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 												 viewBox="0 0 80 80" style="enable-background:new 0 0 80 80;" xml:space="preserve">
 												<path class="svg-anim" d="M63.1,28.4c0,0.4,0,0.6,0,1C63.1,43,53,54,40.4,54.2c-0.1,0-0.2,0-0.4,0c-0.1,0-0.3,0-0.4,0
 												C27.4,54,17.5,43.5,16.9,30.4"/>
@@ -378,7 +394,7 @@
 									</a>
 									<a href="#" class="main-links__item">
 										<div class="main-links__media">
-											<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 												 viewBox="0 0 80 80" style="enable-background:new 0 0 80 80;" xml:space="preserve">
 												<path class="svg-anim" d="M63.1,28.4c0,0.4,0,0.6,0,1C63.1,43,53,54,40.4,54.2c-0.1,0-0.2,0-0.4,0c-0.1,0-0.3,0-0.4,0
 												C27.4,54,17.5,43.5,16.9,30.4"/>
@@ -392,7 +408,7 @@
 									</a>
 									<a href="#" class="main-links__item">
 										<div class="main-links__media">
-											<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 												 viewBox="0 0 80 80" style="enable-background:new 0 0 80 80;" xml:space="preserve">
 												<path class="svg-anim" d="M63.1,28.4c0,0.4,0,0.6,0,1C63.1,43,53,54,40.4,54.2c-0.1,0-0.2,0-0.4,0c-0.1,0-0.3,0-0.4,0
 												C27.4,54,17.5,43.5,16.9,30.4"/>
@@ -411,7 +427,7 @@
 							<div class="container-fluid">
 								<div class="main-services__bg">
 									<div class="row main-services__wrap">
-										<div class="col-md-4 main-services__col">
+										<div class="col-lg-4 main-services__col">
 											<div class="main-services__inner">
 												<h4>Тарифы и услуги</h4>
 												<div class="main-services__group">
@@ -458,7 +474,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-md-4 main-services__col">
+										<div class="col-lg-4 main-services__col">
 											<div class="main-services__inner">
 												<h4>Смартфоны и гаджеты</h4>
 												<div class="main-services__group">
@@ -505,7 +521,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-md-4 main-services__col">
+										<div class="col-lg-4 main-services__col">
 											<div class="main-services__inner">
 												<h4>Популярные сервисы</h4>
 												<div class="main-services__group">
@@ -608,7 +624,10 @@
 													С 31 июля 2018 года новым пользователям тарифных планов линеек 
 													«Smart»*, «ULTRA» и «X» станет проще подключать контентные услуги.
 												</div>
-												<div class="main-news-slider__bottom"></div>
+												<div class="main-news-slider__bottom">
+													<span class="main-news-slider__date">31.07.2018</span>
+													<span class="main-news-slider__cat">Тарифы и скидки на звонки</span>
+												</div>
 											</div>
 										</a>
 										<a href="#" class="main-news-slider__item">
@@ -617,7 +636,10 @@
 												<div class="main-news-slider__info">
 													Новым пользователям тарифных плагов линеек "Смарт", "Ультра" и "Х" станет проще подлючать контентные услуги.
 												</div>
-												<div class="main-news-slider__bottom"></div>
+												<div class="main-news-slider__bottom">
+													<span class="main-news-slider__date">31.07.2018</span>
+													<span class="main-news-slider__cat">Тарифы и скидки на звонки</span>
+												</div>
 											</div>
 										</a>
 										<a href="#" class="main-news-slider__item">
@@ -629,7 +651,10 @@
 													С 31 июля 2018 года новым пользователям тарифных планов линеек 
 													«Smart»*, «ULTRA» и «X» станет проще подключать контентные услуги.
 												</div>
-												<div class="main-news-slider__bottom"></div>
+												<div class="main-news-slider__bottom">
+													<span class="main-news-slider__date">31.07.2018</span>
+													<span class="main-news-slider__cat">Тарифы и скидки на звонки</span>
+												</div>
 											</div>
 										</a>
 										<a href="#" class="main-news-slider__item">
@@ -638,7 +663,10 @@
 												<div class="main-news-slider__info">
 													Новым пользователям тарифных плагов линеек "Смарт", "Ультра" и "Х" станет проще подлючать контентные услуги.
 												</div>
-												<div class="main-news-slider__bottom"></div>
+												<div class="main-news-slider__bottom">
+													<span class="main-news-slider__date">31.07.2018</span>
+													<span class="main-news-slider__cat">Тарифы и скидки на звонки</span>
+												</div>
 											</div>
 										</a>
 									</div>
