@@ -16,7 +16,7 @@
 	</head>
 	<body>
 		<!--LAYOUT-->
-		<div class="layout layout--aside">
+		<div class="layout">
 			<header class="page-header">
 				<div class="top">
 					<div class="container-fluid">
@@ -130,103 +130,140 @@
 			</div>
 			<div class="wrapper">
 				<div class="page-content workarea">
+					<div class="main-slider__item page-top-image" style="background-image: url(img/content/main3.jpg);">
+						<div class="container-fluid">
+							<div class="main-slider__info">
+								<h1>
+									Твой баланс в плюсе<br> и ты тоже!
+								</h1>
+								<div class="main-slider__txt">
+									Скидка 10% на связь при подключении<br> «Автоплатежа»
+								</div>
+								<a href="#" class="btn">Подробнее</a>
+							</div>
+						</div>
+					</div>
 					<div class="container-fluid">
 						<div class="page-title">
 							<h1>Услуга мобильный интернет</h1>
 						</div>
 						<!-- CONTENT-PART -->
-							<div class="row page-aside-wrap">
-								<aside class="col-md-3 page-aside">
-									<div class="page-aside__item">
-										<a href="#" class="page-aside__link">
-											Тарифы для смартфона
-										</a>
-									</div>
-									<div class="page-aside__item active">
-										<span class="page-aside__link">
-											Услуга мобильный интернет
-										</span>
-										<div class="page-aside__submenu">
-											<div class="checkbox-wrap">
-												<input type="checkbox" id="checkbox1" name="checkbox">
-												<label for="checkbox1">Спутниковое ТВ</label>
-											</div>
-											<div class="checkbox-wrap">
-												<input type="checkbox" id="checkbox2" name="checkbox">
-												<label for="checkbox2">Мобильная связь</label>
-											</div>
-											<div class="checkbox-wrap">
-												<input type="checkbox" id="checkbox3" name="checkbox">
-												<label for="checkbox3">Домашний интернет и ТВ</label>
-											</div>
-											<div class="checkbox-wrap">
-												<input type="checkbox" id="checkbox4" name="checkbox">
-												<label for="checkbox4">Банковские продукты</label>
-											</div>
-										</div>
-									</div>
-									<div class="page-aside__item">
-										<a href="#" class="page-aside__link">
-											Ручные настройки интернет
-										</a>
-									</div>
-								</aside>
-								<div class="col-md-9 page-aside-content">
+							<div class="info-item info-item--left">
+								<div class="info-item__media">
+									<img src="img/content/img-mask-left.png" class="info-item__mask-preload" width="1" height="1" alt="">
+									<div class="info-item__mask"></div>
+									<!-- <img src="img/content/img1.jpg" alt="" class="info-item__img"> -->
+									<svg  style="background-color:#ffffff" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="masking-svg">
+										  <defs>
+										    <mask id="masking" maskUnits="objectBoundingBox">
+										      <path d="M-62.12 96.97C21.545-2.364 301.666-114.667 140 7.333c-161.667 122-309.697 403.273-116.667 208C131.47 105.94 355.333-149.333 245 20S-155.304 487.18 38 332.667C234 176 458.667-194 356 25 253.333 244-173.553 600.852 100.667 388.667 360 188 468.667-109.333 448 14 427.333 137.333-1.333 597.333 234 380 469.333 162.667 576-136 526 18S182 558.667 336 386C490 213.333 646.667-160.667 599 11c-47.667 171.667-271.333 494-179 387C512.333 291 717.333-142 663 9c-54.333 151-263 561-151 379S754-128.667 723 12c-31 140.667-226.333 482-132 371S812.667-160.667 783 12c-29.667 172.667-193 479.333-123 366C730 264.667 870.667-142 831 8S674 501.667 722.667 420.667c48.666-81 208.666-666 185.333-408.667S704.394 593.788 806.06 428.788C907.728 263.788 989.334-176.667 947 66c-42.333 242.667-84.698 474.253-48.333 382.667 40.91-103.03 122.545-291.09 122.545-291.09" stroke="#ffffff" stroke-width="80" fill="none"/>
+										    </mask>
+										  </defs>
+
+										  <g mask="url(#masking)" fill="#ffffff">
+										    	<image xlink:href="img/content/img1.jpg"/>
+										    	<!-- <img src="img/content/img1.jpg" alt="" class="info-item__img"> -->
+										  </g>
+									</svg>
+								</div>
+								<div class="info-item__content">
 									<p>
 										Услуга «Мобильный Интернет» открывает возможность использования сервисов, основанных на передаче данных:
 									</p>
 									<ul>
-										<li>
-											мобильный доступ в Интернет (apn: internet.mts.ru);
-										</li>
-										<li>
-											Мобильное ТВ;
-										</li>
-										<li>
-											MMS;
-										</li>
-										<li>
-											WAP (apn: wap.mts.ru).
-										</li>
+										<li>мобильный доступ в Интернет (apn: internet.mts.ru);</li>
+										<li>Мобильное ТВ;</li>
+										<li>MMS;</li>
+										<li>WAP (apn: wap.mts.ru).</li>
 									</ul>
-									<h6>Технологии «Мобильного Интернета»</h6>
+									<h6>
+										Технологии «Мобильного Интернета»
+									</h6>
 									<p>
 										В высокоскоростных сетях 3G и 4G существует возможность воспользоваться услугами, сервисами и программами, привычными для использования через фиксированный доступ в Интернет, такими как онлайн-игры, просмотр видео в Интернете, просмотр ТВ-программ (с помощью услуги «Мобильное ТВ»), а также доступ к электронной почте, социальным сетям, веб-серфинг.
 									</p>
-									<div class="accordeon">
-										<div class="accordeon__item">
-											<a href="#" class="accordeon__link">
-												Что такое GPRS?
-											</a>
-											<div class="accordeon__info">
-												<strong>GPRS (General Packet RadioService)</strong> — технология беспроводной передачи данных, которая позволяет с помощью мобильного устройства получать и передавать данные, работать в сети Интернет и пересылать сообщения электронной почты на более высоких скоростях по сравнению со стандартным голосовым каналом GSM (9,6 Кбит/с). Максимальная скорость передачи данных по технологии GPRS составляет 171,2 Кбит/с.
-											</div>
+								</div>
+							</div>
+							<div class="info-item info-item--right">
+								<div class="info-item__media">
+									<img src="img/content/img-mask-left.png" class="info-item__mask-preload" width="1" height="1" alt="">
+									<img src="img/content/img1.jpg" alt="" class="info-item__img">
+									<div class="info-item__mask"></div>
+								</div>
+								<div class="info-item__content">
+									<p>
+										Услуга «Мобильный Интернет» открывает возможность использования сервисов, основанных на передаче данных:
+									</p>
+									<ul>
+										<li>мобильный доступ в Интернет (apn: internet.mts.ru);</li>
+										<li>Мобильное ТВ;</li>
+										<li>MMS;</li>
+										<li>WAP (apn: wap.mts.ru).</li>
+									</ul>
+									<h6>
+										Технологии «Мобильного Интернета»
+									</h6>
+									<p>
+										В высокоскоростных сетях 3G и 4G существует возможность воспользоваться услугами, сервисами и программами, привычными для использования через фиксированный доступ в Интернет, такими как онлайн-игры, просмотр видео в Интернете, просмотр ТВ-программ (с помощью услуги «Мобильное ТВ»), а также доступ к электронной почте, социальным сетям, веб-серфинг.
+									</p>
+								</div>
+							</div>
+							<div class="main-links">
+								<div class="main-links__wrap">
+									<a href="#" class="main-links__item">
+										<div class="main-links__media">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67.18 78.06" stroke="#E30613" fill="none">
+												<path class="svg-anim" d="M4,30.73V71.39a5.69,5.69,0,0,0,5.67,5.67H57.51a5.69,5.69,0,0,0,5.67-5.67V30.73"></path>
+												<rect class="svg-anim" x="28.7" y="30.73" width="9.78" height="46.33"></rect>
+												<polyline class="svg-anim" points="28.7 57.78 4 57.78 4 55.34 4 52.89 4 50.45 4 48 28.7 48"></polyline>
+												<polyline class="svg-anim" points="38.49 48 63.18 48 63.18 50.45 63.18 52.89 63.18 55.34 63.18 57.78 38.49 57.78"></polyline>
+												<rect class="svg-anim" x="1" y="19.64" width="65.18" height="11.08"></rect>
+												<ellipse class="svg-anim" cx="24.16" cy="10.25" rx="6.21" ry="11.51" transform="translate(-0.17 20.09) rotate(-45.01)"></ellipse>
+												<ellipse class="svg-anim" cx="43.02" cy="10.25" rx="11.51" ry="6.21" transform="translate(5.35 33.41) rotate(-44.99)"></ellipse>
+											</svg>
+
 										</div>
-										<div class="accordeon__item">
-											<a href="#" class="accordeon__link">
-												Что такое GPRS?
-											</a>
-											<div class="accordeon__info">
-												<strong>GPRS (General Packet RadioService)</strong> — технология беспроводной передачи данных, которая позволяет с помощью мобильного устройства получать и передавать данные, работать в сети Интернет и пересылать сообщения электронной почты на более высоких скоростях по сравнению со стандартным голосовым каналом GSM (9,6 Кбит/с). Максимальная скорость передачи данных по технологии GPRS составляет 171,2 Кбит/с.
-											</div>
+										<div class="main-links__txt">МТС Бонус</div>
+									</a>
+									<a href="#" class="main-links__item">
+										<div class="main-links__media">
+											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 80 80" style="enable-background:new 0 0 80 80;" xml:space="preserve">
+												<path class="svg-anim" d="M63.1,28.4c0,0.4,0,0.6,0,1C63.1,43,53,54,40.4,54.2c-0.1,0-0.2,0-0.4,0c-0.1,0-0.3,0-0.4,0
+												C27.4,54,17.5,43.5,16.9,30.4"></path>
+												<path class="svg-anim" d="M17.1,26.1c6-2.5,11.2-6.5,15.4-11.8c8.7,7.7,19.6,11,30.1,9.8"></path>
+												<path class="svg-anim" d="M17.1,26.1C18.6,13.9,28.3,4.4,40,4.4c11.1,0,20.4,8.5,22.6,19.7"></path>
+												<path class="svg-anim" d="M53.2,59.2c12,2.7,20.5,8.7,20.5,15.9"></path>
+												<path class="svg-anim" d="M6.3,75.1c0-7.1,8.3-13.1,20-15.8"></path>
+											</svg>
 										</div>
-										<div class="accordeon__item">
-											<a href="#" class="accordeon__link">
-												Что такое GPRS?
-											</a>
-											<div class="accordeon__info">
-												<strong>GPRS (General Packet RadioService)</strong> — технология беспроводной передачи данных, которая позволяет с помощью мобильного устройства получать и передавать данные, работать в сети Интернет и пересылать сообщения электронной почты на более высоких скоростях по сравнению со стандартным голосовым каналом GSM (9,6 Кбит/с). Максимальная скорость передачи данных по технологии GPRS составляет 171,2 Кбит/с.
-											</div>
+										<div class="main-links__txt">Карта покрытия</div>
+									</a>
+									<a href="#" class="main-links__item">
+										<div class="main-links__media">
+											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 80 80" style="enable-background:new 0 0 80 80;" xml:space="preserve">
+												<path class="svg-anim" d="M63.1,28.4c0,0.4,0,0.6,0,1C63.1,43,53,54,40.4,54.2c-0.1,0-0.2,0-0.4,0c-0.1,0-0.3,0-0.4,0
+												C27.4,54,17.5,43.5,16.9,30.4"></path>
+												<path class="svg-anim" d="M17.1,26.1c6-2.5,11.2-6.5,15.4-11.8c8.7,7.7,19.6,11,30.1,9.8"></path>
+												<path class="svg-anim" d="M17.1,26.1C18.6,13.9,28.3,4.4,40,4.4c11.1,0,20.4,8.5,22.6,19.7"></path>
+												<path class="svg-anim" d="M53.2,59.2c12,2.7,20.5,8.7,20.5,15.9"></path>
+												<path class="svg-anim" d="M6.3,75.1c0-7.1,8.3-13.1,20-15.8"></path>
+											</svg>
 										</div>
-										<div class="accordeon__item">
-											<a href="#" class="accordeon__link">
-												Что такое GPRS?
-											</a>
-											<div class="accordeon__info">
-												<strong>GPRS (General Packet RadioService)</strong> — технология беспроводной передачи данных, которая позволяет с помощью мобильного устройства получать и передавать данные, работать в сети Интернет и пересылать сообщения электронной почты на более высоких скоростях по сравнению со стандартным голосовым каналом GSM (9,6 Кбит/с). Максимальная скорость передачи данных по технологии GPRS составляет 171,2 Кбит/с.
-											</div>
+										<div class="main-links__txt">Перейти в МТС</div>
+									</a>
+									<a href="#" class="main-links__item">
+										<div class="main-links__media">
+											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 80 80" style="enable-background:new 0 0 80 80;" xml:space="preserve">
+												<path class="svg-anim" d="M63.1,28.4c0,0.4,0,0.6,0,1C63.1,43,53,54,40.4,54.2c-0.1,0-0.2,0-0.4,0c-0.1,0-0.3,0-0.4,0
+												C27.4,54,17.5,43.5,16.9,30.4"></path>
+												<path class="svg-anim" d="M17.1,26.1c6-2.5,11.2-6.5,15.4-11.8c8.7,7.7,19.6,11,30.1,9.8"></path>
+												<path class="svg-anim" d="M17.1,26.1C18.6,13.9,28.3,4.4,40,4.4c11.1,0,20.4,8.5,22.6,19.7"></path>
+												<path class="svg-anim" d="M53.2,59.2c12,2.7,20.5,8.7,20.5,15.9"></path>
+												<path class="svg-anim" d="M6.3,75.1c0-7.1,8.3-13.1,20-15.8"></path>
+											</svg>
 										</div>
-									</div>
+										<div class="main-links__txt">Мой МТС</div>
+									</a>
 								</div>
 							</div>
 						<!--end CONTENT-PART -->

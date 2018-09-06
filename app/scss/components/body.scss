@@ -39,7 +39,8 @@ textarea,input {
 
 a{
 	text-decoration: none;
-	color: $base-color;
+	// color: $base-color;
+	color: #1681b4;
 	transition: color 0.3s linear;
 	&:hover{
 		color: $alternate-color;
@@ -54,6 +55,7 @@ body {
 	font-size: $default-size-font;
 	font-family: $default-font;
 	color: $base-color;
+	overflow-x: hidden;
 }
 
 textarea,input {

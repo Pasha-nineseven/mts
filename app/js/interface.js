@@ -4,6 +4,15 @@ $(document).ready(function() {
 	// 	e.preventDefault();
 	// })
 
+	if ($('.masking-svg').length>0) {
+		var $masking_svg = $('.masking-svg').drawsvg({
+	      	duration: 3000,
+	      	easing: 'linear'
+	    });
+
+		$masking_svg.drawsvg('animate');
+	}
+
 
 	//TOP SUBMENU
 	$("body").on("click", ".js-top-links__link--submenu", function(e){
@@ -96,14 +105,14 @@ $(document).ready(function() {
     $('body').on('click','.js-menu-btn', function(e){
 		e.preventDefault();
 		$(this).toggleClass('active');
-		$('.menu-mobile').slideToggle();
+		$('.menu-mobile').addClass('active');
 		$('.menu-mobile__bg').fadeToggle();
 	});
 
 	$('body').on('click','.menu-mobile__bg', function(e){
 		e.preventDefault();
 		$('.menu-btn').removeClass('active');
-		$('.menu-mobile').slideUp();
+		$('.menu-mobile').removeClass('active');
 		$(this).fadeOut();
 	});
 
@@ -181,6 +190,7 @@ $(function() {
 });
 
 
+
 $(window).resize(function () {
 	mainNewsSliderStart();
 	mainHitSliderStart();
@@ -189,6 +199,11 @@ $(window).resize(function () {
 // $(window).load(function(){
 
 // });
+
+
+
+
+
 
 // functions
 function mainNewsSliderStart() {
@@ -257,6 +272,10 @@ $('body').append(
 	</style> \
 	<ol id="pages"> \
 		<li><a href="text.html">Text</a></li> \
+		<li><a href="text2.html">Text-2</a></li> \
+		<li><a href="text3.html">Text-3</a></li> \
+		<li><a href="action1.html">Action-1</a></li> \
+		<li><a href="action2.html">Action-2</a></li> \
 		<li><a href="index.html">Index</a></li> \
 	</ol> \
 </div>');

@@ -142,9 +142,9 @@
 	.page-footer-menu {
 	    padding: 40px 0;
 	}
-	.layout--aside .page-title {
-	    padding-left: 25%;
-	}
+	// .layout--aside .page-title {
+	//     padding-left: 25%;
+	// }
 	.page-aside__link {
 	    padding: 15px 20px 15px 0;
 	    font-size: 16px;
@@ -192,6 +192,37 @@
 		width: 600px;
     	margin: 0 auto 20px;
 	}
+	.more .accordeon {
+	    padding: 40px 40px 40px 85px;
+	    margin-bottom: 40px;
+	}
+	.more {
+	    padding: 40px 0;
+	}
+	.info-item {
+	    flex-wrap: wrap;
+	}
+	.info-item--left .info-item__media,
+	.info-item--right .info-item__media{
+		left: 0;
+		right: 0;
+		width: 100%;
+		margin-right: 0;
+		margin-left: 0;
+		position: relative;
+	}
+	.info-item--left .info-item__content,
+	.info-item--right .info-item__content{
+		left: 0;
+		right: 0;
+		width: 100%;
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.info-item__media {
+	    height: 315px;
+	    margin-bottom: 20px;
+	}
 }
 
 @media screen and (max-width: 900px){
@@ -203,8 +234,8 @@
 	    font-size: 16px;
 	}
 	.tab-button-outer ul li {
-    margin-right: 10px;
-}
+	    margin-right: 10px;
+	}
 }
 
 @media screen and (max-width: 768px){
@@ -229,9 +260,9 @@
 	    	margin-bottom: 0;
 	    }
 	}
-	.layout--aside .page-title {
-	    padding-left: 0;
-	}
+	// .layout--aside .page-title {
+	//     padding-left: 0;
+	// }
 	.page-aside {
 	    margin-top: 0;
 	    margin-bottom: 30px;
@@ -314,6 +345,46 @@
 	.main-slider__info {
 	    max-width: 100%;
 	}
+	.more .accordeon__link {
+	    font-size: 18px;
+	}
+	.more .accordeon__item{
+		padding: 17px 0;
+	}
+	.more .accordeon{
+		padding: 25px 20px 25px 60px;
+	}
+	.accordeon__img {
+	    width: 30px;
+	    height: 30px;
+	    top: 15px;
+	    left: -43px;
+	}
+	.payments {
+	    padding-top: 0;
+	}
+	.payments__item {
+	    flex-wrap: wrap;
+	    font-size: 16px;
+	}
+	.payments__txt, .payments__sum {
+	    padding-bottom: 0;
+	    margin-bottom: 0;
+	    width: 100%;
+	}
+	.payments__txt{
+		margin-bottom: 10px;
+		max-width: 100%;
+	}
+	.payments__item{
+		margin-bottom: 20px;
+	}
+	.payments__item:last-child{
+		margin-bottom: 0;
+	}
+	.payments__sum {
+	    font-size: 18px;
+	}
 }
 
 @media screen and (max-width: 576px){
@@ -395,5 +466,23 @@
 	}
 	.main-services__txt {
 	    text-align: left;
+	}
+	.more-buttons{
+		.btn-sec,
+		.btn{
+			width: 100%;
+		}
+	}
+	.more-buttons a {
+	    margin-right: 0;
+	    margin-bottom: 10px;
+	    &:last-child{
+	    	margin-bottom: 0;
+	    }
+	}
+	
+	.menu-mobile{
+		max-width: 340px;
+    	width: calc(100% - 50px);
 	}
 }
