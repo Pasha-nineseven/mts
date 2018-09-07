@@ -13,3 +13,20 @@
 		}
 	}
 }
+
+
+.layout--form{
+	.page-content{
+		background: #f7f7f7;
+		padding: 80px 0 90px;
+		>.container-fluid{
+			padding: 70px 15px 85px;
+		    max-width: 1135px;
+		    box-shadow: -1px 13px 38px 0px rgba(0, 0, 0, 0.16);
+		    background: #fff;
+		}
+	}
+	.page-title{
+		padding: 0 50px;
+	}
+}

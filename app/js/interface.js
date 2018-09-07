@@ -152,6 +152,25 @@ $(document).ready(function() {
 	};
 
 
+	//FILE-UPLOAD
+	//if ($('.input-file')>length>0) {
+		$('.input-file').on('change', function (event) {
+		    var file = this.files[0];
+		    if(file){
+				$('.button').remove();
+		        $(this).siblings('.input-file-text')
+		        	.html(
+		        		this.value.replace(/C:\\fakepath\\/i, '')
+		        		+ ' ('
+		        		+ Number(file.size/1024/1024).toPrecision(2)
+		        		+ 'Mb)'
+		    		)
+		    }else{
+		        $(this).siblings('.input-file-text').html('Прикрепить документ').removeClass('active');
+		    }
+		});
+	//}
+
 	mainNewsSliderStart();
 	mainHitSliderStart();
 });
@@ -276,6 +295,7 @@ $('body').append(
 		<li><a href="text3.html">Text-3</a></li> \
 		<li><a href="action1.html">Action-1</a></li> \
 		<li><a href="action2.html">Action-2</a></li> \
+		<li><a href="forma-fiz.html">Forma fiz</a></li> \
 		<li><a href="index.html">Index</a></li> \
 	</ol> \
 </div>');

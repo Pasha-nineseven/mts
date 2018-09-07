@@ -65,11 +65,15 @@ textarea,input {
 	line-height: inherit;
 }
 
+input[type=file],
+input[type=file]::-webkit-file-upload-button {
+    cursor: pointer; 
+}
 
-::-webkit-input-placeholder {color:$base-color;transition:all 0.3s ease;}
-::-moz-placeholder          {color:$base-color;transition:all 0.3s ease;}
-:-moz-placeholder           {color:$base-color;transition:all 0.3s ease;}
-:-ms-input-placeholder      {color:$base-color;transition:all 0.3s ease;}
+::-webkit-input-placeholder {color:#cecece;transition:all 0.3s ease;}
+::-moz-placeholder          {color:#cecece;transition:all 0.3s ease;}
+:-moz-placeholder           {color:#cecece;transition:all 0.3s ease;}
+:-ms-input-placeholder      {color:#cecece;transition:all 0.3s ease;}
 
 
 
