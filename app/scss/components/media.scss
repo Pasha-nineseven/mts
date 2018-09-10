@@ -42,6 +42,10 @@
 	.page-footer-menu__item {
 	    padding-right: 12px;
 	}
+	.layout--form .page-content{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 }
 
 @media screen and (max-width: 1150px){
@@ -120,6 +124,7 @@
 }
 
 @media screen and (max-width: 1024px){
+	
 	.bottom {
 	    padding: 40px 0;
 	}
@@ -184,6 +189,12 @@
 	.main-services__col h4 {
 	    font-size: 22px;
 	}
+	.layout--form .page-content > .container-fluid{
+		padding: 40px 20px 60px;
+	}
+	.page-form{
+		padding: 0;
+	}
 }
 
 
@@ -223,6 +234,12 @@
 	    height: 315px;
 	    margin-bottom: 20px;
 	}
+	.tariff__table strong {
+	    font-size: 16px;
+	}
+	.tariff-features__how {
+	    font-size: 18px;
+	}
 }
 
 @media screen and (max-width: 900px){
@@ -236,10 +253,32 @@
 	.tab-button-outer ul li {
 	    margin-right: 10px;
 	}
+	.tariff__table th, .tariff__table td{
+		padding: 15px; 
+	}
 }
 
 @media screen and (max-width: 768px){
 	
+	.workarea h1{
+		font-size: 40px;
+	}
+	.workarea h2{
+		font-size: 36px;
+	}
+	.workarea h3{
+	    font-size: 28px;
+	}
+	.workarea h4{
+	    font-size: 22px;
+	}
+	.workarea h5{
+	    font-size: 18px;
+	}
+	.workarea h6{
+	    font-size: 16px;
+	}
+
 	.bottom-menu__item,
 	.copyright{
 	    font-size: 12px;
@@ -385,6 +424,40 @@
 	.payments__sum {
 	    font-size: 18px;
 	}
+	.capcha__img,
+	.capcha__input{
+	    margin-right: 20px;
+	}
+	.page-form__submit {
+	    padding: 8px 22px;
+	}
+	.workarea th,
+	.workarea td{
+	    padding: 15px;
+	}
+	.tariff-desktop{
+		display: none;
+	}
+	.tariff-mobile{
+		display: block;
+	}
+	.tariff-features{
+		flex-wrap:wrap;
+	}
+	.tariff-features__how{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.tariff-features .more-download__link{
+		width: 100%;
+		display: block;
+	}
+	.tariff-features__inquiry {
+	    margin-left: 0;
+	    display: block;
+	    width: 100%;
+	    margin-top: 10px;
+	}
 }
 
 @media screen and (max-width: 576px){
@@ -484,5 +557,36 @@
 	.menu-mobile{
 		max-width: 340px;
     	width: calc(100% - 50px);
+	}
+	.page-form__top .input-wrap {
+	    flex-wrap: wrap;
+	}
+	.page-form__top .input-wrap__label {
+	    min-width: 100%;
+	    max-width: 100%;
+	    margin-bottom: 10px;
+	}
+	.page-form__doc{
+		padding-left: 0;
+	}
+	.layout--form .page-content {
+	    padding: 40px 20px 60px;
+	}
+	.layout--form .page-title {
+	    padding: 0;
+	}
+	.capcha {
+	    flex-wrap: wrap;
+	}
+	.capcha__inner {
+	    width: 100%;
+	    margin-bottom: 20px;
+	        justify-content: space-around;
+	}
+	.page-form__submit {
+	    width: 100%;
+	}
+	.place{
+		padding: 30px; 
 	}
 }

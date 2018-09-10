@@ -20,7 +20,7 @@
 		background: #f7f7f7;
 		padding: 80px 0 90px;
 		>.container-fluid{
-			padding: 70px 15px 85px;
+			padding: 70px 15px 78px;
 		    max-width: 1135px;
 		    box-shadow: -1px 13px 38px 0px rgba(0, 0, 0, 0.16);
 		    background: #fff;
@@ -28,5 +28,24 @@
 	}
 	.page-title{
 		padding: 0 50px;
+	}
+}
+
+
+
+.layout--map{
+	.page-content{
+		padding: 60px 0 0;
+		>.container-fluid{
+			max-width: 100%;
+			padding: 0; 
+		}
+	}
+	.page-title{
+		max-width: 1165px;
+	    position: static;
+	    width: 100%;
+	    padding: 0 20px;
+	    margin: 0 auto 40px auto;
 	}
 }

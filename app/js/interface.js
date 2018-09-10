@@ -296,6 +296,12 @@ $('body').append(
 		<li><a href="action1.html">Action-1</a></li> \
 		<li><a href="action2.html">Action-2</a></li> \
 		<li><a href="forma-fiz.html">Forma fiz</a></li> \
+		<li><a href="map-coverage.html">Map-coverage</a></li> \
+		<li><a href="map-salon.html">Map-salon</a></li> \
+		<li><a href="country-list.html">Country-list</a></li> \
+		<li><a href="country.html">Country</a></li> \
+		<li><a href="tarify.html">Tarify</a></li> \
+		<li><a href="tariff.html">Tariff</a></li> \
 		<li><a href="index.html">Index</a></li> \
 	</ol> \
 </div>');

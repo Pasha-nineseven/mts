@@ -16,7 +16,7 @@
 	</head>
 	<body>
 		<!--LAYOUT-->
-		<div class="layout layout--aside">
+		<div class="layout layout--map">
 			<header class="page-header">
 				<div class="top">
 					<div class="container-fluid">
@@ -124,7 +124,7 @@
 						<a href="#" class="breadcrumbs__item">Частным клиентам</a>
 						<a href="#" class="breadcrumbs__item">Помощь</a>
 						<a href="#" class="breadcrumbs__item">Мобильный Интернет</a>
-						<span class="breadcrumbs__item">Услуга Мобильный Интернет</span>
+						<span class="breadcrumbs__item">Карта покрытия</span>
 					</div>
 				</div>
 			</div>
@@ -132,100 +132,48 @@
 				<div class="page-content workarea">
 					<div class="container-fluid">
 						<div class="page-title">
-							<h1>Услуга мобильный интернет</h1>
+							<h1>Карта покрытия</h1>
 						</div>
 						<!-- CONTENT-PART -->
-							<div class="row page-aside-wrap">
-								<aside class="col-md-3 page-aside">
-									<div class="page-aside__item">
-										<a href="#" class="page-aside__link">
-											Тарифы для смартфона
-										</a>
-									</div>
-									<div class="page-aside__item active">
-										<span class="page-aside__link">
-											Услуга мобильный интернет
-										</span>
-										<div class="page-aside__submenu">
-											<div class="checkbox-wrap">
-												<input type="checkbox" id="checkbox1" name="checkbox">
-												<label for="checkbox1">Спутниковое ТВ</label>
+							<div class="map-wrap">
+								<div class="container-fluid">
+									<div id="coverage-map"></div>
+									<div class="map-change">
+										<form action="#" method="post">
+											<select class="fs">
+												<option value="Минск">Минск</option>
+												<option value="Брест">Брест</option>
+												<option value="Витебск">Витебск</option>
+												<option value="Гродно">Гродно</option>
+												<option value="Гомель">Гомель</option>
+											</select>
+											<div class="map-change__check">
+												<div class="checkbox-wrap">
+													<input type="checkbox" id="map-ch1" name="checkbox">
+													<label for="map-ch1">
+														Внешняя антена
+													</label>
+												</div>
+												<div class="checkbox-wrap">
+													<input type="checkbox" id="map-ch2" name="checkbox">
+													<label for="map-ch2">
+														Вне зданий м автомобилей
+													</label>
+												</div>
+												<div class="checkbox-wrap">
+													<input type="checkbox" id="map-ch3" name="checkbox">
+													<label for="map-ch3">
+														Внутри автомобиля 9уровень сигнала БС не менее 93)
+													</label>
+												</div>
+												<div class="checkbox-wrap">
+													<input type="checkbox" id="map-ch4" name="checkbox">
+													<label for="map-ch4">
+														Внутри помещений
+													</label>
+												</div>
 											</div>
-											<div class="checkbox-wrap">
-												<input type="checkbox" id="checkbox2" name="checkbox">
-												<label for="checkbox2">Мобильная связь</label>
-											</div>
-											<div class="checkbox-wrap">
-												<input type="checkbox" id="checkbox3" name="checkbox">
-												<label for="checkbox3">Домашний интернет и ТВ</label>
-											</div>
-											<div class="checkbox-wrap">
-												<input type="checkbox" id="checkbox4" name="checkbox">
-												<label for="checkbox4">Банковские продукты</label>
-											</div>
-										</div>
-									</div>
-									<div class="page-aside__item">
-										<a href="#" class="page-aside__link">
-											Ручные настройки интернет
-										</a>
-									</div>
-								</aside>
-								<div class="col-md-9 page-aside-content">
-									<p>
-										Услуга «Мобильный Интернет» открывает возможность использования сервисов, основанных на передаче данных:
-									</p>
-									<ul>
-										<li>
-											мобильный доступ в Интернет (apn: internet.mts.ru);
-										</li>
-										<li>
-											Мобильное ТВ;
-										</li>
-										<li>
-											MMS;
-										</li>
-										<li>
-											WAP (apn: wap.mts.ru).
-										</li>
-									</ul>
-									<h6>Технологии «Мобильного Интернета»</h6>
-									<p>
-										В высокоскоростных сетях 3G и 4G существует возможность воспользоваться услугами, сервисами и программами, привычными для использования через фиксированный доступ в Интернет, такими как онлайн-игры, просмотр видео в Интернете, просмотр ТВ-программ (с помощью услуги «Мобильное ТВ»), а также доступ к электронной почте, социальным сетям, веб-серфинг.
-									</p>
-									<div class="accordeon">
-										<div class="accordeon__item">
-											<a href="#" class="accordeon__link">
-												Что такое GPRS?
-											</a>
-											<div class="accordeon__info">
-												<strong>GPRS (General Packet RadioService)</strong> — технология беспроводной передачи данных, которая позволяет с помощью мобильного устройства получать и передавать данные, работать в сети Интернет и пересылать сообщения электронной почты на более высоких скоростях по сравнению со стандартным голосовым каналом GSM (9,6 Кбит/с). Максимальная скорость передачи данных по технологии GPRS составляет 171,2 Кбит/с.
-											</div>
-										</div>
-										<div class="accordeon__item">
-											<a href="#" class="accordeon__link">
-												Что такое GPRS?
-											</a>
-											<div class="accordeon__info">
-												<strong>GPRS (General Packet RadioService)</strong> — технология беспроводной передачи данных, которая позволяет с помощью мобильного устройства получать и передавать данные, работать в сети Интернет и пересылать сообщения электронной почты на более высоких скоростях по сравнению со стандартным голосовым каналом GSM (9,6 Кбит/с). Максимальная скорость передачи данных по технологии GPRS составляет 171,2 Кбит/с.
-											</div>
-										</div>
-										<div class="accordeon__item">
-											<a href="#" class="accordeon__link">
-												Что такое GPRS?
-											</a>
-											<div class="accordeon__info">
-												<strong>GPRS (General Packet RadioService)</strong> — технология беспроводной передачи данных, которая позволяет с помощью мобильного устройства получать и передавать данные, работать в сети Интернет и пересылать сообщения электронной почты на более высоких скоростях по сравнению со стандартным голосовым каналом GSM (9,6 Кбит/с). Максимальная скорость передачи данных по технологии GPRS составляет 171,2 Кбит/с.
-											</div>
-										</div>
-										<div class="accordeon__item">
-											<a href="#" class="accordeon__link">
-												Что такое GPRS?
-											</a>
-											<div class="accordeon__info">
-												<strong>GPRS (General Packet RadioService)</strong> — технология беспроводной передачи данных, которая позволяет с помощью мобильного устройства получать и передавать данные, работать в сети Интернет и пересылать сообщения электронной почты на более высоких скоростях по сравнению со стандартным голосовым каналом GSM (9,6 Кбит/с). Максимальная скорость передачи данных по технологии GPRS составляет 171,2 Кбит/с.
-											</div>
-										</div>
+										</form>
 									</div>
 								</div>
 							</div>
@@ -358,7 +306,9 @@
 			
 		</div><!-- END LAYOUT-->
 
+		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 		<script src="js/libs.min.js"></script>
+		<script src="js/coverage-map.js"></script>
 		<script src="js/interface.js"></script>
 	</body>
 </html>
