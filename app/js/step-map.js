@@ -5,10 +5,10 @@ $(document).ready(function() {
 
 
 function initMap() {
-	if ($('#salon-map').length>0) {
+	if ($('#step-map').length>0) {
 		var icon = "img/content/с-label.png";
 
-		var myMap = new ymaps.Map("salon-map", {
+		var myMap = new ymaps.Map("step-map", {
 	        center:[53.9045398,27.5615244],
 	        zoom: 11,
 	        controls: []

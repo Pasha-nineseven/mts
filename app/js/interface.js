@@ -171,6 +171,14 @@ $(document).ready(function() {
 		});
 	//}
 
+
+	//MOBILE-TARIFF ACCORDEON
+	$("body").on("click", ".tariff-mobile__link", function(e){
+		e.preventDefault();
+		$(this).toggleClass('active');
+		$(this).next('.tariff-mobile__toggle').slideToggle();
+	})
+
 	mainNewsSliderStart();
 	mainHitSliderStart();
 });
@@ -302,6 +310,7 @@ $('body').append(
 		<li><a href="country.html">Country</a></li> \
 		<li><a href="tarify.html">Tarify</a></li> \
 		<li><a href="tariff.html">Tariff</a></li> \
+		<li><a href="step1.html">Step1</a></li> \
 		<li><a href="index.html">Index</a></li> \
 	</ol> \
 </div>');

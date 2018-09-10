@@ -46,6 +46,11 @@
 		padding-left: 20px;
 		padding-right: 20px;
 	}
+	.more-items {
+	    margin: 0 -20px -60px;
+	    overflow: hidden;
+	    padding: 60px 20px;
+	}
 }
 
 @media screen and (max-width: 1150px){
@@ -458,6 +463,13 @@
 	    width: 100%;
 	    margin-top: 10px;
 	}
+	.place {
+	    padding: 20px;
+	    margin-bottom: 25px;
+	}
+	.place__input {
+	    padding: 11px 62px 11px 29px !important;
+	}
 }
 
 @media screen and (max-width: 576px){
@@ -585,8 +597,5 @@
 	}
 	.page-form__submit {
 	    width: 100%;
-	}
-	.place{
-		padding: 30px; 
 	}
 }
