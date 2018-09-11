@@ -6092,6 +6092,98 @@ a.breadcrumbs__item {
   font-size: 18px !important;
   color: #fff; }
 
+.step {
+  padding-bottom: 71px; }
+
+.step__wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.step__item {
+  margin-right: 45px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .step__item:last-child {
+    margin-right: 0; }
+    .step__item:last-child .step__count:after {
+      display: none; }
+  .step__item.active {
+    position: relative;
+    top: 16px;
+    margin-right: 10px; }
+    .step__item.active .step__count {
+      border: 2px solid #ff0109;
+      color: #ff0109;
+      font-size: 36px;
+      font-family: 'corpid-regular';
+      width: 80px;
+      height: 80px; }
+
+.step__txt {
+  font-size: 24px;
+  font-family: 'corpid-regular';
+  padding-top: 10px; }
+
+.step__count {
+  width: 48px;
+  height: 48px;
+  border: 2px solid #adafaf;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  color: #adafaf;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 24px;
+  position: relative; }
+  .step__count span {
+    margin-top: -2px;
+    display: inline-block; }
+  .step__count:after {
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 1px;
+    background: #adafaf;
+    position: absolute;
+    top: 50%;
+    left: -webkit-calc(100% + 9px);
+    left: calc(100% + 9px); }
+
 .page-footer {
   color: #fff;
   position: relative; }

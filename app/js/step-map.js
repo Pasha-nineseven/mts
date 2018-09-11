@@ -19,8 +19,8 @@ function initMap() {
             },{
             iconLayout: 'default#image',
             iconImageHref: "/img/content/c-label.png", 
-            iconImageSize: [50, 70],
-            iconImageOffset: [-25, -65]
+            iconImageSize: [36,53],
+            iconImageOffset: [-17, -48]
     	}); 
 
         var clusterIcons=[{
@@ -47,6 +47,9 @@ function initMap() {
 			{balloonContentBody: '<div class="label-time">пн-вс 10:00-12:00</div><div class="label-address">Минск, ул.Бурдейного, 35, пом.7</div><div class="label-metro">м.Каменная горка</div>'},
 			{balloonContentBody: '<div class="label-time">пн-вс 10:00-12:00</div><div class="label-address">Минск, ул.Бурдейного, 35, пом.7</div><div class="label-metro">м.Каменная горка</div>'},
 			{balloonContentBody: '<div class="label-time">пн-вс 10:00-12:00</div><div class="label-address">Минск, ул.Бурдейного, 35, пом.7</div><div class="label-metro">м.Каменная горка</div>'},
+			{balloonContentBody: '<div class="label-time">пн-вс 10:00-12:00</div><div class="label-address">Минск, ул.Бурдейного, 35, пом.7</div><div class="label-metro">м.Каменная горка</div>'},
+			{balloonContentBody: '<div class="label-time">пн-вс 10:00-12:00</div><div class="label-address">Минск, ул.Бурдейного, 35, пом.7</div><div class="label-metro">м.Каменная горка</div>'},
+			{balloonContentBody: '<div class="label-time">пн-вс 10:00-12:00</div><div class="label-address">Минск, ул.Бурдейного, 35, пом.7</div><div class="label-metro">м.Каменная горка</div>'},
 		],
 		 
 		getPointOptions = function () {
@@ -54,12 +57,12 @@ function initMap() {
 				//preset: 'islands#redDotIcon'
 				iconLayout: 'default#image',
 	            iconImageHref: "/img/content/c-label.png", 
-	            iconImageSize: [50, 70],
-	            iconImageOffset: [-25, -65]
+	            iconImageSize: [36,53],
+            	iconImageOffset: [-17, -48]
 			};
 		},
 		 
-		points = [[53.93850609, 27.664864554],[53.9045398,27.5615244],[53.87621345,27.1375208],],
+		points = [[53.93850609, 27.664864554],[53.9045398,27.5615244],[53.87621345,27.1375208],[53.8859275,27.63224889],[53.92759137,27.56272603],[53.96537647,27.51842159],],
 		geoObjects = [];
 		 
 		for(var i = 0, len = points.length; i < len; i++) {
