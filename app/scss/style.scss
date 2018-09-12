@@ -2598,6 +2598,31 @@ a.breadcrumbs__item{
 	}
 }
 
+.map-place-select{
+	padding: 68px 0;
+	background: #f7f7f7;
+}
+
+
+.map-place-select__wrap{
+	display: flex;
+	align-items:center;
+}
+
+.map-place-select__half{
+	padding-right: 38px;
+	&:last-child{
+		padding-right: 0;
+	}
+}
+
+.map-place-select__item{
+	padding-right: 38px;
+	&:last-child{
+		padding-right: 0;
+	}
+}
+
 @import "components/footer";
 
 
