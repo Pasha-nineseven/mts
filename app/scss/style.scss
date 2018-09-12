@@ -1905,7 +1905,7 @@ a.breadcrumbs__item{
 	padding-bottom: 17px;
 	.input-wrap{
 		display: flex;
-		align-items: space-between;
+		justify-content: space-between;
 		align-items:center;
 	}
 	.input-wrap__label{
@@ -2705,6 +2705,45 @@ a.breadcrumbs__item{
 		text-align: center;
 	}
 }
+
+.step-data__item{
+	padding: 50px 0;
+	//border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+	&:first-child{
+		padding-top: 0;
+	}
+}
+
+
+.step-data{
+	.input-wrap{
+		display: flex;
+		justify-content: space-between;
+		align-items:center;
+		max-width: 606px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	.input-wrap__label{
+		min-width: 198px;
+    	max-width: 198px;
+	}
+}
+
+.step-form__title{
+	h4{
+		display: inline-block;
+	}
+}
+
+.input-wrap__add{
+	display: block;
+	font-size: 14px;
+	color: #a9a9a9;
+}
+
 
 @import "components/footer";
 
