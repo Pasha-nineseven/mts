@@ -5665,7 +5665,7 @@ a.breadcrumbs__item {
   margin-bottom: -20px; }
 
 .map-wrap-place {
-  height: 730px;
+  height: 640px;
   width: 100%;
   position: relative;
   margin-bottom: -20px; }
@@ -6135,7 +6135,8 @@ a.breadcrumbs__item {
   .step__item.active {
     position: relative;
     top: 16px;
-    margin-right: 10px; }
+    margin-right: 10px;
+    margin-left: -35px; }
     .step__item.active .step__count {
       border: 2px solid #ff0109;
       color: #ff0109;
@@ -6143,6 +6144,10 @@ a.breadcrumbs__item {
       font-family: 'corpid-regular';
       width: 80px;
       height: 80px; }
+    .step__item.active:last-child {
+      margin-right: 0; }
+    .step__item.active:first-child {
+      margin-left: 0; }
 
 .step__txt {
   font-size: 24px;
@@ -6185,7 +6190,7 @@ a.breadcrumbs__item {
     left: calc(100% + 9px); }
 
 .map-place-select {
-  padding: 68px 0;
+  padding: 64px 0 44px;
   background: #f7f7f7; }
 
 .map-place-select__wrap {
@@ -6196,17 +6201,81 @@ a.breadcrumbs__item {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  white-space: nowrap;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
 
 .map-place-select__half {
-  padding-right: 38px; }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
   .map-place-select__half:last-child {
-    padding-right: 0; }
+    margin-right: -32px; }
 
 .map-place-select__item {
-  padding-right: 38px; }
-  .map-place-select__item:last-child {
-    padding-right: 0; }
+  padding-right: 32px;
+  margin-bottom: 20px; }
+  .map-place-select__item .btn {
+    font-size: 18px;
+    padding: 8px 34px; }
+
+.map-place-select__item--city {
+  width: 292px; }
+
+.map-place-select__item--street {
+  width: 292px; }
+
+.map-place-select__item--number {
+  width: 182px; }
+
+.step-done {
+  background: #f7f7f7;
+  padding: 72px 0 100px;
+  color: #adadad;
+  text-align: center; }
+  .step-done h2 {
+    color: #333333; }
+  .step-done p {
+    color: #adadad; }
+
+.step-done__img {
+  position: relative;
+  max-width: 815px;
+  max-height: 420px;
+  overflow: hidden;
+  margin: 50px auto 0; }
+  .step-done__img .info-item__mask {
+    background: url(../img/content/done-mask.png) no-repeat 0 0;
+    background-size: 100% 100%;
+    max-width: 815px;
+    max-height: 420px; }
+  .step-done__img img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%; }
+
+.step-form {
+  padding: 60px 0 100px;
+  background: #f7f7f7; }
+
+.step-form__inner {
+  background: #fff;
+  padding: 60px 80px;
+  -webkit-box-shadow: 0px 9px 35px 0px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 9px 35px 0px rgba(0, 0, 0, 0.16); }
+  .step-form__inner h2 {
+    text-align: center; }
 
 .page-footer {
   color: #fff;
@@ -6891,4 +6960,51 @@ a.breadcrumbs__item {
         -ms-flex-pack: distribute;
             justify-content: space-around; }
   .page-form__submit {
-    width: 100%; } }
+    width: 100%; }
+  .map-place-select__item {
+    padding-right: 0; }
+  .map-place-select__item--city,
+  .map-place-select__item--street,
+  .map-place-select__item--number {
+    width: 100%; }
+  .map-place-select__half:last-child {
+    margin-right: 0; }
+  .map-place-select__half,
+  .map-place-select__item {
+    width: 100%; }
+  .step__wrap {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .step__item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 45px; }
+  .step__count:after {
+    width: 1px;
+    height: 32px;
+    left: 50%;
+    top: -webkit-calc(100% + 13px);
+    top: calc(100% + 13px); }
+  .step__item.active {
+    padding-bottom: 35px;
+    margin: -10px 0 45px 0; }
+    .step__item.active .step__count:after {
+      display: none; }
+    .step__item.active:after {
+      content: "";
+      width: 1px;
+      height: 32px;
+      left: 50%;
+      bottom: -10px;
+      background: #adafaf;
+      position: absolute;
+      display: inline-block; }
+    .step__item.active:last-child:after {
+      display: none; }
+  .step {
+    padding-bottom: 30px; }
+  .step__item:last-child {
+    margin-bottom: 0; }
+  .step-done {
+    padding: 35px 0 65px; } }

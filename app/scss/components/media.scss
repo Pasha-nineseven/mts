@@ -51,7 +51,9 @@
 	    overflow: hidden;
 	    padding: 60px 20px;
 	}
+
 }
+
 
 @media screen and (max-width: 1150px){
 	.bottom-menu__item {
@@ -597,5 +599,67 @@
 	}
 	.page-form__submit {
 	    width: 100%;
+	}
+	.map-place-select__item{
+		padding-right: 0;
+	}
+	.map-place-select__item--city,
+	.map-place-select__item--street,
+	.map-place-select__item--number{
+	    width: 100%;
+	}
+	.map-place-select__half:last-child {
+	    margin-right: 0;
+	}
+	.map-place-select__half,
+	.map-place-select__item{
+	    width: 100%;
+	}
+	.step__wrap{
+		flex-wrap:wrap;
+	}
+	.step__item{
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 45px;
+	}
+	.step__count:after{
+		width: 1px;
+		height: 32px;
+		left: 50%;
+		top: calc(100% + 13px);
+	}
+	.step__item.active {
+	    padding-bottom: 35px;
+	    margin: -10px 0 45px 0;
+	    .step__count{
+	    	&:after{
+	    		display: none;
+	    	}
+	    }
+	    &:after{
+	    	content: "";
+			width: 1px;
+		    height: 32px;
+		    left: 50%;
+		        bottom: -10px;
+			background: #adafaf;
+			position: absolute;
+			display: inline-block;
+	    }
+	    &:last-child{
+	    	&:after{
+	    		display: none;
+	    	}
+	    }
+	}
+	.step {
+	    padding-bottom: 30px;
+	}
+	.step__item:last-child{
+		margin-bottom: 0;
+	}
+	.step-done {
+	    padding: 35px 0 65px;
 	}
 }

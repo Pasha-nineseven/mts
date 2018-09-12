@@ -311,6 +311,8 @@ $('body').append(
 		<li><a href="tarify.html">Tarify</a></li> \
 		<li><a href="tariff.html">Tariff</a></li> \
 		<li><a href="step1.html">Step1</a></li> \
+		<li><a href="step2.html">Step2</a></li> \
+		<li><a href="step3.html">Step3</a></li> \
 		<li><a href="index.html">Index</a></li> \
 	</ol> \
 </div>');

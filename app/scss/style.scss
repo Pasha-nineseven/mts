@@ -2061,7 +2061,7 @@ a.breadcrumbs__item{
 }
 
 .map-wrap-place{
-    height: 730px;
+    height: 640px;
     width: 100%;
     position: relative;
     margin-bottom: -20px;
@@ -2553,6 +2553,7 @@ a.breadcrumbs__item{
 		position: relative;
 		top: 16px;
 		margin-right: 10px;
+		margin-left: -35px;
 		.step__count{
 			border: 2px solid $alternate-color;
 			color: $alternate-color;
@@ -2561,7 +2562,12 @@ a.breadcrumbs__item{
 			width: 80px;
 			height: 80px;
 		}
-
+		&:last-child{
+			margin-right: 0;
+		}
+		&:first-child{
+			margin-left: 0;
+		}
 	}
 }
 
@@ -2599,7 +2605,7 @@ a.breadcrumbs__item{
 }
 
 .map-place-select{
-	padding: 68px 0;
+	padding: 64px 0 44px;
 	background: #f7f7f7;
 }
 
@@ -2607,19 +2613,96 @@ a.breadcrumbs__item{
 .map-place-select__wrap{
 	display: flex;
 	align-items:center;
+	white-space: nowrap;
+	flex-wrap:wrap;
 }
 
 .map-place-select__half{
-	padding-right: 38px;
+	//margin-right: -38px;
+	display: flex;
+    align-items: center;
+        flex-wrap: wrap;
 	&:last-child{
-		padding-right: 0;
+		margin-right: -32px;
+		// .map-place-select__item{
+		// 	&:last-child{
+		// 		margin-bottom: 0;
+		// 	}
+		// }
 	}
 }
 
 .map-place-select__item{
-	padding-right: 38px;
-	&:last-child{
-		padding-right: 0;
+	padding-right: 32px;
+	margin-bottom: 20px;
+	// &:last-child{
+	// 	padding-right: 0;
+	// }
+	.btn{
+		font-size: 18px;
+		padding: 8px 34px;
+	}
+}
+
+.map-place-select__item--city{
+	width: 292px;
+}
+
+.map-place-select__item--street{
+	width: 292px;
+}
+
+.map-place-select__item--number{
+	width: 182px;
+}
+
+
+.step-done{
+	background: #f7f7f7;
+	padding: 72px 0 100px;
+	color: #adadad;
+	text-align: center;
+	h2{
+		color: #333333;
+	}
+	p{
+		color: #adadad; 
+	}
+}
+
+.step-done__img{
+	position: relative;
+	max-width: 815px;
+    max-height: 420px;
+    overflow: hidden;
+    margin: 50px auto 0;
+	.info-item__mask{
+		background: url(../img/content/done-mask.png) no-repeat 0 0;
+    	background-size: 100% 100%;
+		max-width: 815px;
+	    max-height: 420px;
+	}
+	img{
+		display: block;
+		max-width: 100%;
+		height: auto;
+		max-height: 100%;
+	}
+}
+
+
+.step-form{
+	    padding: 60px 0 100px;
+	background: #f7f7f7;
+}
+
+
+.step-form__inner{
+	background: #fff;
+	padding: 60px 80px;
+	box-shadow: 0px 9px 35px 0px rgba(0, 0, 0, 0.16);
+	h2{
+		text-align: center;
 	}
 }
 
