@@ -220,6 +220,12 @@
 														<input type="text">
 													</div>
 													<div class="input-wrap input-wrap--necessary">
+														<div class="input-wrap__label">Дата выдачи паспорта</div>
+														<div class="calendar">
+															<input type="text" class="input-date js-input-date" value="01.09.2018">
+														</div>
+													</div>
+													<div class="input-wrap input-wrap--necessary input-wrap--tooltip">
 														<div class="input-wrap__label">Адрес регистрации</div>
 														<input type="text">
 														<span class="tooltip" title="Пожалуйста, укажите адрес прописки">?</span>
@@ -227,6 +233,52 @@
 													<div class="input-wrap input-wrap--necessary">
 														<div class="input-wrap__label">Место рождения</div>
 														<input type="text">
+													</div>
+													<div class="input-wrap input-wrap--necessary">
+														<div class="input-wrap__label">Дата рождения</div>
+														<div class="calendar">
+															<input type="text" class="input-date js-input-date" value="01.09.2018">
+														</div>
+													</div>
+												</div>
+												<div class="step-data__item">
+													<div class="step-data-row">
+														<div class="step-data-row__item">
+															<h4>Подключаемая услуга</h4>
+														</div>
+														<div class="step-data-row__item">
+															<input type="radio" id="service1" name="service" checked>
+															<label for="service1">Услуга1</label>
+														</div>
+														<div class="step-data-row__item">
+															<input type="radio" id="service2" name="service">
+															<label for="service2">Услуга2</label>
+														</div>
+														<div class="step-data-row__item">
+															<input type="radio" id="service3" name="service">
+															<label for="service3">Услуга3</label>
+														</div>
+													</div>
+												</div>
+												<div class="page-form__send">
+													<div class="checkbox-wrap">
+														<input type="checkbox" id="resolution" name="checkbox">
+														<label for="resolution">
+															Отправляя заявку на подключение услуг, я соглашаюсь на обработку своих данных, указанных в заявке с целью информирования по услугам ПАО МГТС и заключения договора.
+														</label>
+													</div>
+													<div class="page-form__msg"><span>Поля обязательные для заполнения</span></div>
+													<div class="capcha">
+														<div class="capcha__inner">
+															<div class="capcha__img">
+																<img src="img/content/capcha.jpg" alt="">
+															</div>
+															<div class="capcha__input">
+																<input type="text">
+																<a href="#" class="capcha__re"></a>
+															</div>
+														</div>
+														<input type="submit" value="Отправить" class="btn-sec page-form__submit">
 													</div>
 												</div>
 											</form>

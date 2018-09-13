@@ -285,6 +285,61 @@ a.breadcrumbs__item{
 	input[type="checkbox"]:checked + label:after {
 	  opacity: 1;
 	}
+
+
+
+
+	input[type="radio"]:not(:checked),
+	input[type="radio"]:checked{
+		position: absolute;
+		left: -9999px;
+	}
+	input[type="radio"]:not(:checked) + label,
+	input[type="radio"]:checked + label{
+		position: relative;
+		cursor: pointer;
+		padding-left: 30px;
+		line-height: 17px;
+		display: inline-block;
+		cursor: pointer;
+	}
+
+	input[type="radio"]:not(:checked) + label:before,
+	input[type="radio"]:checked + label:before{
+		content: '';
+		position: absolute;
+		left: 0;
+    	top: 0;
+		width: 17px;
+		height: 17px;
+		border-radius: 50%;
+		border: 1px solid #e4e4e4;
+		background: #fff;
+		cursor: pointer;
+		//z-index: 5;
+	}
+	input[type="radio"]:checked+ label:before{
+		// border: 1px solid $base-color;
+	}
+	input[type="radio"]:not(:checked) + label:after,
+	input[type="radio"]:checked + label:after {
+		content: '';
+		background: $alternate-color;
+		width: 7px;
+		height: 7px;
+		border-radius: 50%;
+		display: inline-block;
+		position: absolute;
+		top: 5px;
+		left: 5px;
+		//z-index: 10;
+	}
+	input[type="radio"]:not(:checked) + label:after {
+	  opacity: 0;
+	}
+	input[type="radio"]:checked + label:after {
+	  opacity: 1;
+	}
 	table{
 		width: 100%;
 		font-size: 16px;
@@ -1987,9 +2042,11 @@ a.breadcrumbs__item{
 	    line-height: 24px;
 	    font-size: 16px;
 	    padding-left: 32px;
-	    &:before,
-	    &:after{
+	    &:before{
 	    	top: 4px;
+	    }
+	    &:after{
+	    	top: 6px;
 	    }
 	}
 }
@@ -2555,7 +2612,7 @@ a.breadcrumbs__item{
 		margin-right: 10px;
 		margin-left: -35px;
 		.step__count{
-			border: 2px solid $alternate-color;
+			border: 1px solid $alternate-color;
 			color: $alternate-color;
 			font-size: 36px;
 			font-family: 'corpid-regular';
@@ -2580,7 +2637,7 @@ a.breadcrumbs__item{
 .step__count{
 	width: 48px;
 	height: 48px;
-	border: 2px solid #adafaf;
+	border: 1px solid #adafaf;
 	border-radius: 50%;
 	color: #adafaf;
 	display: flex;
@@ -2692,22 +2749,37 @@ a.breadcrumbs__item{
 
 
 .step-form{
-	padding: 60px 0 100px;
+	padding: 83px 0 100px;
 	background: #f7f7f7;
+	input[type="text"],
+	input[type="email"],
+	input[type="password"] {
+	    padding: 5px 12px;
+	}
 }
-
+.step-form__title{
+	margin-bottom: 19px;
+}
 
 .step-form__inner{
 	background: #fff;
-	padding: 60px 80px;
+	padding: 65px 80px;
 	box-shadow: 0px 9px 35px 0px rgba(0, 0, 0, 0.16);
 	h2{
 		text-align: center;
+		margin-bottom: 39px;
+	}
+	p{
+		    line-height: 1.6;
 	}
 }
 
+.step-data{
+	padding-top: 40px;
+}
+
 .step-data__item{
-	padding: 50px 0;
+	padding: 45px 0;
 	//border-top: 1px solid #e5e5e5;
 	border-bottom: 1px solid #e5e5e5;
 	&:first-child{
@@ -2719,10 +2791,11 @@ a.breadcrumbs__item{
 .step-data{
 	.input-wrap{
 		display: flex;
-		justify-content: space-between;
+		// justify-content: space-between;
 		align-items:center;
 		max-width: 606px;
 		position: relative;
+		//margin-bottom: 18px;
 		&:last-child{
 			margin-bottom: 0;
 		}
@@ -2732,9 +2805,41 @@ a.breadcrumbs__item{
 		}
 	}
 	.input-wrap__label{
-		min-width: 198px;
-    	max-width: 198px;
+		min-width: 196px;
+		max-width: 196px;
+		position: relative;
 	}
+	.page-form__send{
+		border-top: 0;
+	}
+}
+
+.calendar{
+	display: inline-block;
+	position: relative;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	overflow: hidden;
+
+	&:before{
+		content: "";
+		display: inline-block;
+		width: 38px;
+		height: 100%;
+		background: #f2f2f2 url(../img/svg/calendar.svg) center no-repeat;
+		background-size: 18px 18px;
+		position: absolute;
+		left: 0;
+		top: 0;
+		pointer-events:none;
+	}
+}
+
+.workarea input[type="text"].input-date{
+	width: 177px;
+	text-align: center;
+	padding-left:  40px;
+	cursor: pointer;
 }
 
 .step-form__title{
@@ -2747,6 +2852,8 @@ a.breadcrumbs__item{
 	display: block;
 	font-size: 14px;
 	color: #a9a9a9;
+	position: absolute;
+	top: calc(100% - 1px);
 }
 
 .input-wrap--double{
@@ -2762,10 +2869,115 @@ a.breadcrumbs__item{
 	}
 }
 
+
+.ui-widget.ui-widget-content{
+	border: 0;
+    background: #fff;
+    background-clip: padding-box;
+    border: 1px solid #e4e4e4;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    font: normal 15px/1 'corpid-light', sans-serif;
+}
+
+.ui-widget-header {
+    border: 0;
+    background: #fff;
+    color: inherit;
+    font-weight: inherit;
+    border-radius: 0!important;
+}
+
+.ui-datepicker .ui-datepicker-header {
+    padding: 10px 0;
+    font-size: 16px;
+    font-family: 'corpid-regular';
+}
+
+.ui-datepicker .ui-datepicker-next,
+.ui-datepicker .ui-datepicker-prev {
+    position: absolute;
+    top: 50%;
+        margin-top: -8px;
+    width: 16px;
+    height: 16px;
+}
+
+
+.ui-datepicker-prev{
+	left: 5px !important;
+	cursor: pointer;
+}
+.ui-datepicker-prev .ui-icon {
+    background: url(../img/svg/cal-left.svg) center no-repeat;
+}
+
+
+.ui-datepicker-next{
+	right: 5px !important;
+	cursor: pointer;
+}
+.ui-datepicker-next .ui-icon {
+    background: url(../img/svg/cal-right.svg) center no-repeat;
+}
+
+.ui-widget-header .ui-state-focus,
+.ui-widget-header .ui-state-hover {
+    border: 0;
+    background: transparent;
+    font-weight: inherit;
+    color: inherit;
+}
+
+.ui-datepicker th {
+    padding: 7px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'corpid-regular';
+    font-weight: inherit;
+    border: 0;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.ui-datepicker td a,
+.ui-datepicker td span {
+    text-align:center;
+    border: 0!important;
+    background: #fff!important;
+    padding: 7px 1px;
+    border-radius: 5px;
+    &:hover{
+    	color: $alternate-color;
+    }
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active{
+	background: $alternate-color!important; 
+}
+
+.ui-datepicker td {
+    border: 0;
+    padding: 1px 1px;
+}
+
+.step-data-row{
+	display: flex;
+	align-items:center;
+	font-size: 16px;
+	h4{
+		margin-bottom: 0;
+	}
+	.step-data-row__item{
+		margin-right: 45px;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+}
+
 @import "components/footer";
-
-
-
 
 @import "components/media";
 

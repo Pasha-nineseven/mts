@@ -214,6 +214,16 @@ $(function() {
 	    $tabContents.hide();
 	    $(target).show();
 	});
+
+
+	if ($( ".js-input-date" ).length>0) {
+		$( ".js-input-date" ).datepicker({
+			dateFormat : "dd.mm.yy",
+			minDate: new Date($('#hiddendelivdate').val()),
+			monthNames : ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+			dayNamesMin : ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+		});
+	}
 });
 
 
