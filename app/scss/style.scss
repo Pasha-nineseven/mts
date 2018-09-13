@@ -1815,6 +1815,7 @@ a.breadcrumbs__item{
     color: #fff;
     font-family: 'corpid-regular';
     font-size: 40px;
+        padding: 0 20px;
 }
 
 .actions-filter{
@@ -1978,6 +1979,10 @@ a.breadcrumbs__item{
 .input-wrap__label{
 	font-size: 16px;
 	color: #4c4c4c;
+	span{
+		display: inline-block;
+		position: relative;
+	}
 }
 
 .input-wrap{
@@ -1986,11 +1991,13 @@ a.breadcrumbs__item{
 
 .input-wrap--necessary{
 	.input-wrap__label{
-		&:after{
-			content: "*";
-			display: inline-block;
-			color: #ff010b;
-			margin-left: 5px;
+		span{
+			&:after{
+				content: "*";
+				display: inline-block;
+				color: #ff010b;
+				margin-left: 5px;
+			}
 		}
 	}
 }
@@ -2118,7 +2125,7 @@ a.breadcrumbs__item{
 }
 
 .map-wrap-place{
-    height: 640px;
+    height: 740px;
     width: 100%;
     position: relative;
     margin-bottom: -20px;
@@ -2852,8 +2859,9 @@ a.breadcrumbs__item{
 	display: block;
 	font-size: 14px;
 	color: #a9a9a9;
-	position: absolute;
-	top: calc(100% - 1px);
+	// position: absolute;
+	// top: calc(100% - 1px);
+	margin-top: -2px;
 }
 
 .input-wrap--double{
@@ -2976,6 +2984,11 @@ a.breadcrumbs__item{
 		}
 	}
 }
+
+.table-phone{
+	white-space: nowrap;
+}
+
 
 @import "components/footer";
 

@@ -326,6 +326,7 @@
 	float: right;
 	position: relative;
 	margin-top: 4px;
+	z-index: 9;
 	&:before{
 		content: "";
 		display: inline-block;
@@ -337,6 +338,7 @@
 		background: #ebebeb;
 	}
 	&.active{
+		margin-top: -15px;
 		.burger-icon {
 		    background-color: transparent;
 		    &:before{
@@ -345,6 +347,12 @@
 		    &:after{
 				transform: translateY(-8px) rotate(-45deg);
 		    }
+		}
+		&:before{
+			display: none;
+		}
+		.burger-txt{
+			display: none;
 		}
 	}
 }
@@ -408,7 +416,112 @@
     width: 340px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    font-size: 16px;
     &.active{
 		right: 0;
     }
+}
+
+.menu-mobile-bottom{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: #fff;
+	padding: 19px  18px;
+	display: flex;
+	justify-content:space-between;
+	z-index: 2;
+	border-top: 1px solid #f2f4f6;
+	font-size: 16px;
+}
+
+.menu-mobile-top-search__link{
+	width: 26px;
+    height: 26px;
+    display: inline-block;
+    background: url(../img/svg/search-mob.svg) center no-repeat;
+    background-size: contain;
+}
+
+.menu-mobile-top-search__form{
+	display: none;
+	min-width: 100%;
+	max-width: 100%;
+	    padding: 0 20px 25px 20px;
+	    position: relative;
+	    &:before{
+	    	content: '';
+	    	display: inline-block;
+			background: #fff;
+			width: 7px;
+			height: 7px;
+			transform: rotate(-45deg);
+			position: absolute;
+			top: -4px;
+			right: 80px;
+			box-sizing: border-box;
+			pointer-events: none;
+			display: block;
+			border-top: 1px solid #e4e4e4;
+			border-right: 1px solid #e4e4e4;
+	    }
+}
+
+.replenish{
+	display: inline-block;
+	color: #858585;
+	padding-left: 33px;
+	position: relative;
+	&:before{
+		content: "";
+		display: inline-block;
+		width: 26px;
+		height: 22px;
+		background: url(../img/svg/money.svg) center no-repeat;
+    	background-size: contain;
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform:translateY(-50%);
+	}
+}
+
+.menu-mobile-top-search{
+	
+}
+
+.menu-mobile-top{
+	border-bottom: 1px solid #f2f4f6;
+	
+}
+
+.menu-mobile-top__wrap{
+	display: flex;
+	align-items:center;
+	justify-content: space-between;
+	padding: 24px 67px 22px 19px;
+	flex-wrap:wrap;
+}
+
+
+.menu-mobile-top-search__input{
+	background: #fff;
+    width: 100%;
+    border-radius: 5px;
+    border: medium none;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px 32px 5px 10px;
+    height: 36px;
+    font-size: 16.5px;
+    line-height: 22px;
+    border: 1px solid #e4e4e4;
+}
+
+.menu-mobile-caption{
+	padding: 20px;
+	color: #e30611;
+	text-transform: uppercase;
+	font-family: 'corpid-bold';
 }

@@ -56,6 +56,9 @@ body {
 	font-family: $default-font;
 	color: $base-color;
 	overflow-x: hidden;
+	&.fixed{
+		overflow: hidden;
+	}
 }
 
 textarea,input {

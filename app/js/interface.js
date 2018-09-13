@@ -105,8 +105,9 @@ $(document).ready(function() {
     $('body').on('click','.js-menu-btn', function(e){
 		e.preventDefault();
 		$(this).toggleClass('active');
-		$('.menu-mobile').addClass('active');
+		$('.menu-mobile').toggleClass('active');
 		$('.menu-mobile__bg').fadeToggle();
+		$('body').toggleClass('fixed');
 	});
 
 	$('body').on('click','.menu-mobile__bg', function(e){
@@ -114,6 +115,7 @@ $(document).ready(function() {
 		$('.menu-btn').removeClass('active');
 		$('.menu-mobile').removeClass('active');
 		$(this).fadeOut();
+		$('body').removeClass('fixed');
 	});
 
 	//FOOTER-MENU-MOBILE
@@ -224,6 +226,13 @@ $(function() {
 			dayNamesMin : ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
 		});
 	}
+
+
+	//MOBILE-SEARCH
+	$("body").on("click", ".menu-mobile-top-search__link", function(e){
+		e.preventDefault();
+		$('.menu-mobile-top-search__form').slideToggle();
+	})
 });
 
 
@@ -323,6 +332,7 @@ $('body').append(
 		<li><a href="step1.html">Step1</a></li> \
 		<li><a href="step2.html">Step2</a></li> \
 		<li><a href="step3.html">Step3</a></li> \
+		<li><a href="services.html">Services</a></li> \
 		<li><a href="index.html">Index</a></li> \
 	</ol> \
 </div>');
