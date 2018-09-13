@@ -2692,7 +2692,7 @@ a.breadcrumbs__item{
 
 
 .step-form{
-	    padding: 60px 0 100px;
+	padding: 60px 0 100px;
 	background: #f7f7f7;
 }
 
@@ -2722,8 +2722,13 @@ a.breadcrumbs__item{
 		justify-content: space-between;
 		align-items:center;
 		max-width: 606px;
+		position: relative;
 		&:last-child{
 			margin-bottom: 0;
+		}
+		.tooltip{
+			position: absolute;
+			left: calc(100% + 10px);
 		}
 	}
 	.input-wrap__label{
@@ -2744,6 +2749,18 @@ a.breadcrumbs__item{
 	color: #a9a9a9;
 }
 
+.input-wrap--double{
+	margin-right: -18px;
+	input[type="text"],
+	input[type="email"],
+	input[type="password"]{
+		margin-right: 18px;
+		width: 50%;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+}
 
 @import "components/footer";
 

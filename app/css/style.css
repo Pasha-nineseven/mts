@@ -6296,9 +6296,14 @@ a.breadcrumbs__item {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 606px; }
+  max-width: 606px;
+  position: relative; }
   .step-data .input-wrap:last-child {
     margin-bottom: 0; }
+  .step-data .input-wrap .tooltip {
+    position: absolute;
+    left: -webkit-calc(100% + 10px);
+    left: calc(100% + 10px); }
 
 .step-data .input-wrap__label {
   min-width: 198px;
@@ -6311,6 +6316,18 @@ a.breadcrumbs__item {
   display: block;
   font-size: 14px;
   color: #a9a9a9; }
+
+.input-wrap--double {
+  margin-right: -18px; }
+  .input-wrap--double input[type="text"],
+  .input-wrap--double input[type="email"],
+  .input-wrap--double input[type="password"] {
+    margin-right: 18px;
+    width: 50%; }
+    .input-wrap--double input[type="text"]:last-child,
+    .input-wrap--double input[type="email"]:last-child,
+    .input-wrap--double input[type="password"]:last-child {
+      margin-right: 0; }
 
 .page-footer {
   color: #fff;
