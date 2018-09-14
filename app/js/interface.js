@@ -4,13 +4,22 @@ $(document).ready(function() {
 	// 	e.preventDefault();
 	// })
 
-	if ($('.masking-svg').length>0) {
-		var $masking_svg = $('.masking-svg').drawsvg({
-	      	duration: 3000,
-	      	easing: 'linear'
-	    });
+	// if ($('.masking-svg').length>0) {
+	// 	var $masking_svg = $('.masking-svg').drawsvg({
+	//       	duration: 3000,
+	//       	easing: 'linear'
+	//     });
 
-		$masking_svg.drawsvg('animate');
+	// 	$masking_svg.drawsvg('animate');
+	// }
+	if ( $('.info-item__media').length ){
+		$('.info-item__media').each(function (i) {
+			$(this).paintBrush({
+				ratioSpeed: 4,
+				ratioRadius: 15,
+			});
+		});
+
 	}
 
 
@@ -313,6 +322,21 @@ function mainHitSliderStart() {
 		}
 	}
 }
+
+
+function isScrolledIntoView(elem){
+    var $elem = $(elem);
+    var $window = $(window);
+
+    var docViewTop = $window.scrollTop();
+    var docViewBottom = docViewTop + $window.height();
+
+    var elemTop = $elem.offset().top;
+    var elemBottom = elemTop + $elem.height();
+
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
+
 
 // links pages
 $('body').append(
