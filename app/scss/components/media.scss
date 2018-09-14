@@ -730,15 +730,16 @@
 	    max-width: 100%;
 	    margin-bottom: 10px;
 	}
-	.input-wrap--double input[type="text"],
-	.input-wrap--double input[type="email"],
-	.input-wrap--double input[type="password"] {
-	    margin-right: 0;
-	    width: 100%;
-	    margin-bottom: 20px;
-	    &:last-child{
-	    	margin-bottom: 0;
-	    }
+	.input-wrap--double{
+
+		.input-wrapper{
+		    margin-right: 0;
+		    width: 100%;
+		    margin-bottom: 30px;
+		    &:last-child{
+		    	margin-bottom: 0;
+		    }
+		}
 	}
 	.input-wrap--tooltip .tooltip {
 	    bottom: 7px;

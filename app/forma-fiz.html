@@ -135,23 +135,31 @@
 							<div class="page-form">
 								<form action="#" method="post">
 									<div class="page-form__top">
-										<div class="input-wrap input-wrap--necessary">
+										<div class="input-wrap input-wrap--necessary input-wrap--error">
 											<div class="input-wrap__label">
 												<span>Ф.И.О.</span>
 											</div>
-											<input type="text">
+											<div class="input-wrapper">
+												<input type="text">
+												<div class="error-message">Заполните это поле</div>
+											</div>
 										</div>
 										<div class="input-wrap input-wrap--necessary">
 											<div class="input-wrap__label">
 												<span>E-mail</span>
 											</div>
-											<input type="text">
+											<div class="input-wrapper">
+												<input type="text">
+											</div>
 										</div>
-										<div class="input-wrap input-wrap--textarea input-wrap--necessary">
+										<div class="input-wrap input-wrap--textarea input-wrap--necessary input-wrap--error">
 											<div class="input-wrap__label">
 												<span>Обращение</span>
 											</div>
-											<textarea placeholder="Текст сообщения"></textarea>
+											<div class="input-wrapper">
+												<textarea placeholder="Текст сообщения"></textarea>
+												<div class="error-message">Заполните это поле</div>
+											</div>
 										</div>
 										<div class="input-wrap">
 											<div class="page-form__doc">

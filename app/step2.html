@@ -168,14 +168,18 @@
 													</div>
 													<div class="input-wrap input-wrap--necessary">
 														<div class="input-wrap__label">Ф.И.О.</div>
-														<input type="text">
+														<div class="input-wrapper">
+															<input type="text">
+														</div>
 													</div>
 													<div class="input-wrap input-wrap--necessary">
 														<div class="input-wrap__label">
 															<span>Контактный телефон</span>
 															<div class="input-wrap__add">(без пробелов и тире)</div>
 														</div>
-														<input type="text" placeholder="+375">
+														<div class="input-wrapper">
+															<input type="text" placeholder="+375">
+														</div>
 													</div>
 												</div>
 												<div class="step-data__item">
@@ -185,30 +189,44 @@
 															<span class="tooltip" title="Дополнительная информация">?</span>
 														</h4>
 													</div>
-													<div class="input-wrap input-wrap--necessary">
+													<div class="input-wrap input-wrap--necessary input-wrap--error">
 														<div class="input-wrap__label">
 															<span>Город</span>
 														</div>
-														<input type="text">
+														<div class="input-wrapper">
+															<input type="text">
+															<div class="error-message">Заполните это поле</div>
+														</div>
 													</div>
-													<div class="input-wrap input-wrap--necessary">
+													<div class="input-wrap input-wrap--necessary input-wrap--error">
 														<div class="input-wrap__label">
 															<span>Улица</span>
 														</div>
-														<input type="text">
+														<div class="input-wrapper">
+															<input type="text">
+															<div class="error-message">Заполните это поле</div>
+														</div>
 													</div>
-													<div class="input-wrap input-wrap--double input-wrap--necessary">
+													<div class="input-wrap input-wrap--double input-wrap--necessary input-wrap--error">
 														<div class="input-wrap__label">
 															<span>Дом, корпус</span>
 														</div>
-														<input type="text" placeholder="Дом">
-														<input type="text" placeholder="Корпус">
+														<div class="input-wrapper">
+															<input type="text" placeholder="Дом">
+															<div class="error-message">Заполните это поле</div>
+														</div>
+														<div class="input-wrapper">
+															<input type="text" placeholder="Корпус">
+															<div class="error-message">Заполните это поле</div>
+														</div>
 													</div>
 													<div class="input-wrap input-wrap--necessary">
 														<div class="input-wrap__label">
 															<span>Квартира</span>
 														</div>
-														<input type="text">
+														<div class="input-wrapper">
+															<input type="text">
+														</div>
 													</div>
 												</div>
 												<div class="step-data__item">
@@ -219,47 +237,62 @@
 														<div class="input-wrap__label">
 															<span>Серия и номер</span>
 														</div>
-														<input type="text">
+														<div class="input-wrapper">
+															<input type="text">
+														</div>
 													</div>
-													<div class="input-wrap input-wrap--necessary">
+													<div class="input-wrap input-wrap--necessary input-wrap--error">
 														<div class="input-wrap__label">
 															<span>Личный номер</span>
 														</div>
-														<input type="text">
+														<div class="input-wrapper">
+															<input type="text">
+															<div class="error-message">Заполните это поле</div>
+														</div>
 													</div>
 													<div class="input-wrap input-wrap--necessary">
 														<div class="input-wrap__label">
 															<span>Кем выдан паспорт</span>
 														</div>
-														<input type="text">
+														<div class="input-wrapper">
+															<input type="text">
+														</div>
 													</div>
 													<div class="input-wrap input-wrap--necessary">
 														<div class="input-wrap__label">
 															<span>Дата выдачи паспорта</span>
 														</div>
 														<div class="calendar">
-															<input type="text" class="input-date js-input-date" value="01.09.2018">
+															<div class="input-wrapper">
+																<input type="text" class="input-date js-input-date" value="01.09.2018">
+															</div>
 														</div>
 													</div>
 													<div class="input-wrap input-wrap--necessary input-wrap--tooltip">
 														<div class="input-wrap__label">
 															<span>Адрес регистрации</span>
 														</div>
-														<input type="text">
+														<div class="input-wrapper">
+															<input type="text">
+														</div>
 														<span class="tooltip" title="Пожалуйста, укажите адрес прописки">?</span>
 													</div>
 													<div class="input-wrap input-wrap--necessary">
 														<div class="input-wrap__label">
 															<span>Место рождения</span>
 														</div>
-														<input type="text">
+														<div class="input-wrapper">
+															<input type="text">
+														</div>
 													</div>
 													<div class="input-wrap input-wrap--necessary">
 														<div class="input-wrap__label">
 															<span>Дата рождения</span>
 														</div>
 														<div class="calendar">
-															<input type="text" class="input-date js-input-date" value="01.09.2018">
+															<div class="input-wrapper">
+																<input type="text" class="input-date js-input-date" value="01.09.2018">
+															</div>
 														</div>
 													</div>
 												</div>

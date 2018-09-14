@@ -2839,6 +2839,7 @@ a.breadcrumbs__item{
 		left: 0;
 		top: 0;
 		pointer-events:none;
+		z-index: 1;
 	}
 }
 
@@ -2866,9 +2867,7 @@ a.breadcrumbs__item{
 
 .input-wrap--double{
 	margin-right: -18px;
-	input[type="text"],
-	input[type="email"],
-	input[type="password"]{
+	.input-wrapper{
 		margin-right: 18px;
 		width: 50%;
 		&:last-child{
@@ -2988,6 +2987,32 @@ a.breadcrumbs__item{
 .table-phone{
 	white-space: nowrap;
 }
+
+
+.input-wrap--error{
+	input[type="text"],
+	input[type="email"],
+	input[type="password"],
+	textarea{
+		border: 1px solid $alternate-color;
+	}
+}
+
+
+.input-wrapper{
+	position: relative;
+	width: 100%;
+}
+
+.error-message{
+	font-size: 16px;
+	color: $alternate-color;
+	min-width: 100%;
+	max-width: 100%;
+	position: absolute;
+	bottom: -20px;
+}
+
 
 
 @import "components/footer";

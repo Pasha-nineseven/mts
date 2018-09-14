@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>test</title>
+		<!-- <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" /> -->
+		<link href="css/libs.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<!--LAYOUT-->
+		<div class="layout">
+			<header class="page-header">
+				<div class="top">
+					<div class="container-fluid">
+						<div class="top__wrap">
+							<div class="top-links">
+								<div class="top-links__item">
+									<a href="#" class="top-links__link active">Частным клиентам</a>
+								</div>
+								<div class="top-links__item">
+									<a href="#" class="top-links__link">Бизнесу</a>
+								</div>
+								<div class="top-links__item top-links__item--sub">
+									<a href="#" class="top-links__link top-links__link--all js-top-links__link--submenu">Все сайты</a>
+									<div class="top-links__submenu">
+										<a href="#">Госзаказчикам</a>
+										<a href="#">О компании</a>
+										<a href="#">МТС/Медиа</a>
+									</div>
+								</div>
+							</div>
+							<div class="top-middle">
+								<a href="#" class="replenish">Пополнить</a>
+								<div class="cabinet-toggle">
+									<a href="#" class="cabinet-link js-top-links__link--submenu">Личный кабинет</a>
+									<div class="top-links__submenu">
+										<a href="#">Ссылка 1</a>
+										<a href="#">Ссылка 2</a>
+										<a href="#">Ссылка 3</a>
+									</div>
+								</div>
+							</div>
+							<div class="top-toggle">
+								<div class="top-lang">
+									<a href="#" class="top-lang__link">by</a>
+									<a href="#" class="top-lang__link">en</a>
+								</div>
+								<a href="#" class="vis-impaired">Для слабовидящих</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid">
+					<div class="page-header__inner">
+						<div class="page-header__top">
+							<a href="#" class="page-header__logo">
+								<img src="img/content/logo.jpg" alt="">
+								<span class="page-header__slogan">Повод стать ближе!</span>
+							</a>
+							<div class="top-search">
+								<form action="#" method="post">
+									<input type="search" placeholder="Поиск" class="top-search__input">
+									<input type="submit" class="top-search__submit">
+								</form>
+							</div>
+						</div>
+						<div class="page-header-links">
+							<a href="#" class="page-header-links__item">
+								<span class="page-header-links__icon">
+									<img src="img/svg/mts16-header-icon_mobile.svg" alt="">
+								</span>
+								Тарифы и услуги
+							</a>
+							<a href="#" class="page-header-links__item">
+								<span class="page-header-links__icon">
+									<img src="img/svg/interface.svg" alt="">
+								</span>
+								Финансовые и информационные сервисы
+							</a>
+							<a href="#" class="page-header-links__item">
+								<span class="page-header-links__icon">
+									<img src="img/svg/mts16-header-icon_basket.svg" alt="">
+								</span>
+								Смартфоны и гаджеты
+							</a>
+							<a href="#" class="page-header-links__item">
+								<span class="page-header-links__icon">
+									<img src="img/svg/mts16-header-icon_sales.svg" alt="">
+								</span>
+								Акции и привилегии
+							</a>
+							<a href="#" class="page-header-links__item">
+								<span class="page-header-links__icon">
+									<img src="img/svg/mts16-header-icon_support.svg" alt="">
+								</span>
+								Помощь
+							</a>
+						</div>
+						<a href="#" class="menu-btn js-menu-btn">
+							<span class="burger-icon"></span>
+							<span class="burger-txt">Меню</span>
+						</a>
+					</div>
+				</div>
+			</header>
+			<div class="menu-mobile">
+				<div class="menu-mobile-wrp">
+					<div class="menu-mobile-top">
+						<div class="menu-mobile-top__wrap">
+							<a href="#" class="replenish">Пополнить</a>
+							<div class="menu-mobile-top-search">
+								<a href="#" class="menu-mobile-top-search__link"></a>
+							</div>
+						</div>
+						<div class="menu-mobile-top-search__form">
+							<form action="#" method="post">
+								<input type="text" class="menu-mobile-top-search__input">
+							</form>
+						</div>
+					</div>
+					<div class="menu-mobile-caption">
+						Частным клиентам
+					</div>
+					<div class="menu-mobile-list">
+						<div class="menu-mobile__item menu-mobile__item--submenu">
+							<a href="#" class="menu-mobile__link js-submenu-link">
+								<span class="menu-mobile__icon">
+									<img src="img/svg/m-mobile.svg" alt="">
+								</span>
+								<span class="menu-mobile__txt">
+									Тарифы и услуги
+								</span>
+							</a>
+							<div class="mobile-submenu">
+								<a href="#" class="menu-mobile__link">
+									Тарифы и SIM-карты
+								</a>
+								<a href="#" class="menu-mobile__link">
+									Услуги
+								</a>
+								<a href="#" class="menu-mobile__link">
+									Роуминг и межгород
+								</a>
+								<a href="#" class="menu-mobile__link">
+									Мобильный интернет
+								</a>
+								<a href="#" class="menu-mobile__link">
+									Акции и бонусы
+								</a>
+							</div>
+						</div>
+						<div class="menu-mobile__item">
+							<a href="#" class="menu-mobile__link">
+								<span class="menu-mobile__icon">
+									<img src="img/svg/interface.svg" alt="">
+								</span>
+								<span class="menu-mobile__txt">
+									Финансовые и информационные сервисы
+								</span>
+							</a>
+						</div>
+						<div class="menu-mobile__item menu-mobile__item--submenu">
+							<a href="#" class="menu-mobile__link js-submenu-link">
+								<span class="menu-mobile__icon">
+									<img src="img/svg/cart.svg" alt="">
+								</span>
+								<span class="menu-mobile__txt">
+									Смартоны и гаджеты
+								</span>
+							</a>
+							<div class="mobile-submenu">
+								<a href="#" class="menu-mobile__link">
+									Банковские карты
+								</a>
+								<a href="#" class="menu-mobile__link">
+									Денежные переводы
+								</a>
+								<a href="#" class="menu-mobile__link">
+									Услуги
+								</a>
+								<a href="#" class="menu-mobile__link">
+									Акции и бонусы
+								</a>
+							</div>
+						</div>
+						<div class="menu-mobile__item">
+							<a href="#" class="menu-mobile__link">
+								<span class="menu-mobile__icon">
+									<img src="img/svg/action.svg" alt="">
+								</span>
+								<span class="menu-mobile__txt">
+									Акции и привилегии
+								</span>
+							</a>
+						</div>
+						<div class="menu-mobile__item">
+							<a href="#" class="menu-mobile__link">
+								<span class="menu-mobile__icon">
+									<img src="img/svg/info.svg" alt="">
+								</span>
+								<span class="menu-mobile__txt">
+									Помощь
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="menu-mobile-secondary">
+						<a href="#" class="menu-mobile-secondary__link">Бизнесу</a>
+						<a href="#" class="menu-mobile-secondary__link">Госзаказчикам</a>
+						<a href="#" class="menu-mobile-secondary__link">О компании</a>
+						<a href="#" class="menu-mobile-secondary__link">МТС/Медиа</a>
+						<a href="#" class="menu-mobile-secondary__link">Investor Relation</a>
+					</div>
+				</div>
+				<div class="menu-mobile-bottom">
+					<div class="top-lang">
+						<a href="#" class="top-lang__link">by</a>
+						<a href="#" class="top-lang__link">en</a>
+					</div>
+					<a href="#" class="vis-impaired">Для слабовидящих</a>
+				</div>
+			</div>
+			<div class="menu-mobile__bg"></div>
+			<div class="breadcrumbs">
+				<div class="container-fluid">
+					<div class="breadcrumbs__wrap">
+						<a href="#" class="breadcrumbs__item">Главная</a>
+						<span class="breadcrumbs__item">Роуминг</span>
+					</div>
+				</div>
+			</div>
+			<div class="wrapper">
+				<div class="page-content workarea">
+					<div class="main-slider__item page-top-image" style="background-image: url(img/content/country-bg.jpg);">
+						<div class="container-fluid">
+							<div class="page-top-image__txt">
+								Unlim за границей
+							</div>
+						</div>
+					</div>
+					<div class="container-fluid">
+						<!-- CONTENT-PART -->
+							<div class="place">
+								<h3>Куда вы едете?</h3>
+								<div class="place__form">
+									<form action="#" method="post">
+										<input type="text" class="place__input">
+										<input type="submit" class="place__submit">
+									</form>
+								</div>
+							</div>
+							<div class="tariff">
+								<h2>Армения</h2>
+								<div class="tariff__table tariff-desktop">
+									<table>
+										<tr>
+											<th>&nbsp;</th>
+											<th>
+												Bakcell LLC, 4G
+												<span class="tooltip" title="Дополнительная информация">?</span>
+											</th>
+											<th>
+												Bakcell LLC, 4G
+												<span class="tooltip" title="Дополнительная информация">?</span>
+											</th>
+											<th>
+												Bakcell LLC, 4G
+												<span class="tooltip" title="Дополнительная информация">?</span>
+											</th>
+											<th>
+												Bakcell LLC, 4G
+												<span class="tooltip" title="Дополнительная информация">?</span>
+											</th>
+											<th>
+												Bakcell LLC, 4G
+												<span class="tooltip" title="Дополнительная информация">?</span>
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<strong>Звонки</strong>
+											</td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>Входящие</td>
+											<td><strong>0,73 руб.</strong></td>
+											<td><strong>0,73 руб.</strong></td>
+											<td><strong>0,73 руб.</strong></td>
+											<td><strong>0,73 руб.</strong></td>
+											<td><strong>0,73 руб.</strong></td>
+										</tr>
+										<tr>
+											<td>Исходящие</td>
+											<td></td>
+											<td></td>
+											<td><strong>0,73 руб.</strong></td>
+											<td><strong>0,73 руб.</strong></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td><span class="t-indent">Входящие</span></td>
+											<td><strong>0,73 руб.</strong></td>
+											<td><strong>0,73 руб.</strong></td>
+											<td><strong>0,73 руб.</strong></td>
+											<td><strong>0,73 руб.</strong></td>
+											<td><strong>0,73 руб.</strong></td>
+										</tr>
+										<tr>
+											<td><span class="t-indent">Исходящие</span></td>
+											<td><strong>0,73 руб.</strong></td>
+											<td><strong>0,73 руб.</strong></td>
+											<td><strong>0,73 руб.</strong></td>
+											<td><strong>0,73 руб.</strong></td>
+											<td><strong>0,73 руб.</strong></td>
+										</tr>
+										<tr>
+											<td><span class="t-indent">Исходящие</span></td>
+											<td><strong>0,73 руб.</strong></td>
+											<td><strong>0,73 руб.</strong></td>
+											<td><strong>0,73 руб.</strong></td>
+											<td><strong>0,73 руб.</strong></td>
+											<td><strong>0,73 руб.</strong></td>
+										</tr>
+										<tr>
+											<td><strong>СМС</strong></td>
+											<td><strong>0,73 руб.</strong></td>
+											<td><strong>0,73 руб.</strong></td>
+											<td><strong>0,73 руб.</strong></td>
+											<td><strong>0,73 руб.</strong></td>
+											<td><strong>0,73 руб.</strong></td>
+										</tr>
+										<tr>
+											<td><strong>Интернет</strong></td>
+											<td><strong>0,73 руб.</strong></td>
+											<td><strong>0,73 руб.</strong></td>
+											<td><strong>0,73 руб.</strong></td>
+											<td><strong>0,73 руб.</strong></td>
+											<td><strong>0,73 руб.</strong></td>
+										</tr>
+									</table>
+								</div>
+								<div class="tariff-mobile">
+									<div class="tariff-mobile__item">
+										<div class="tariff-mobile__top">
+											Bakcell LLC, 4G
+											<span class="tooltip" title="Дополнительная информация">?</span>
+										</div>
+										<a href="#" class="tariff-mobile__link">Звонки</a>
+										<div class="tariff-mobile__toggle">
+											<div class="tariff-mobile-info">
+												<div class="tariff-mobile-info__item">
+													<div>Входящие</div>
+													<div><strong>0.73 руб.</strong></div>
+												</div>
+												<div class="tariff-mobile-info__item">
+													<div>Исходящие</div>
+													<div><strong>0.73 руб.</strong></div>
+												</div>
+												<div class="t-indent">
+													<div class="tariff-mobile-info__item">
+														<div>Входящие</div>
+														<div><strong>0.73 руб.</strong></div>
+													</div>
+													<div class="tariff-mobile-info__item">
+														<div>Исходящие</div>
+														<div><strong>0.73 руб.</strong></div>
+													</div>
+													<div class="tariff-mobile-info__item">
+														<div>Исходящие</div>
+														<div><strong>0.73 руб.</strong></div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tariff-mobile__inner">
+											<div>СМС</div>
+											<div>0.73 руб.</div>
+										</div>
+										<div class="tariff-mobile__inner">
+											<div>Интернет</div>
+											<div>0.73 руб.</div>
+										</div>
+									</div>
+									<div class="tariff-mobile__item">
+										<div class="tariff-mobile__top">
+											Bakcell LLC, 4G
+											<span class="tooltip" title="Дополнительная информация">?</span>
+										</div>
+										<a href="#" class="tariff-mobile__link">Звонки</a>
+										<div class="tariff-mobile__toggle">
+											<div class="tariff-mobile-info">
+												<div class="tariff-mobile-info__item">
+													<div>Входящие</div>
+													<div><strong>0.73 руб.</strong></div>
+												</div>
+												<div class="tariff-mobile-info__item">
+													<div>Исходящие</div>
+													<div><strong>0.73 руб.</strong></div>
+												</div>
+												<div class="t-indent">
+													<div class="tariff-mobile-info__item">
+														<div>Входящие</div>
+														<div><strong>0.73 руб.</strong></div>
+													</div>
+													<div class="tariff-mobile-info__item">
+														<div>Исходящие</div>
+														<div><strong>0.73 руб.</strong></div>
+													</div>
+													<div class="tariff-mobile-info__item">
+														<div>Исходящие</div>
+														<div><strong>0.73 руб.</strong></div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tariff-mobile__inner">
+											<div>СМС</div>
+											<div>0.73 руб.</div>
+										</div>
+										<div class="tariff-mobile__inner">
+											<div>Интернет</div>
+											<div>0.73 руб.</div>
+										</div>
+									</div>
+									<div class="tariff-mobile__item">
+										<div class="tariff-mobile__top">
+											Bakcell LLC, 4G
+											<span class="tooltip" title="Дополнительная информация">?</span>
+										</div>
+										<a href="#" class="tariff-mobile__link">Звонки</a>
+										<div class="tariff-mobile__toggle">
+											<div class="tariff-mobile-info">
+												<div class="tariff-mobile-info__item">
+													<div>Входящие</div>
+													<div><strong>0.73 руб.</strong></div>
+												</div>
+												<div class="tariff-mobile-info__item">
+													<div>Исходящие</div>
+													<div><strong>0.73 руб.</strong></div>
+												</div>
+												<div class="t-indent">
+													<div class="tariff-mobile-info__item">
+														<div>Входящие</div>
+														<div><strong>0.73 руб.</strong></div>
+													</div>
+													<div class="tariff-mobile-info__item">
+														<div>Исходящие</div>
+														<div><strong>0.73 руб.</strong></div>
+													</div>
+													<div class="tariff-mobile-info__item">
+														<div>Исходящие</div>
+														<div><strong>0.73 руб.</strong></div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tariff-mobile__inner">
+											<div>СМС</div>
+											<div>0.73 руб.</div>
+										</div>
+										<div class="tariff-mobile__inner">
+											<div>Интернет</div>
+											<div>0.73 руб.</div>
+										</div>
+									</div>
+									<div class="tariff-mobile__item">
+										<div class="tariff-mobile__top">
+											Bakcell LLC, 4G
+											<span class="tooltip" title="Дополнительная информация">?</span>
+										</div>
+										<a href="#" class="tariff-mobile__link">Звонки</a>
+										<div class="tariff-mobile__toggle">
+											<div class="tariff-mobile-info">
+												<div class="tariff-mobile-info__item">
+													<div>Входящие</div>
+													<div><strong>0.73 руб.</strong></div>
+												</div>
+												<div class="tariff-mobile-info__item">
+													<div>Исходящие</div>
+													<div><strong>0.73 руб.</strong></div>
+												</div>
+												<div class="t-indent">
+													<div class="tariff-mobile-info__item">
+														<div>Входящие</div>
+														<div><strong>0.73 руб.</strong></div>
+													</div>
+													<div class="tariff-mobile-info__item">
+														<div>Исходящие</div>
+														<div><strong>0.73 руб.</strong></div>
+													</div>
+													<div class="tariff-mobile-info__item">
+														<div>Исходящие</div>
+														<div><strong>0.73 руб.</strong></div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tariff-mobile__inner">
+											<div>СМС</div>
+											<div>0.73 руб.</div>
+										</div>
+										<div class="tariff-mobile__inner">
+											<div>Интернет</div>
+											<div>0.73 руб.</div>
+										</div>
+									</div>
+								</div>
+								<div class="tariff-features">
+									<div class="tariff-features__how">
+										Как подключить: 
+										<div class="tariff-features__inquiry">
+											USSD-запрос <span>*111*13#</span>
+										</div>
+									</div>
+									<a href="img/content/logo.jpg" download="" class="more-download__link">Тариф “Мой Безлимитище” <span>(44Кб)</span></a>
+								</div>
+							</div>
+							<div class="more-items">
+								<div class="row items">
+									<div class="col-lg-3 col-md-4 col-sm-6 item item--btn">
+										<div class="item__inner">
+											<div class="item__img" style="background-image: url(img/content/item1.jpg);"></div>
+											<div class="item__info">
+												<div class="item__title">
+													Подарочный сертификат от МТС
+												</div>
+												<div class="item__txt">
+													Выбирайте подарочный сертификат МТС нужного номинала 500, 1000 или 3000 рублей и дарите общение.
+												</div>
+											</div>
+											<a href="#" class="btn">Подключить</a>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-4 col-sm-6 item item--btn">
+										<div class="item__inner">
+											<div class="item__img" style="background-image: url(img/content/item2.jpg);"></div>
+											<div class="item__info">
+												<div class="item__title">
+													Домашнего Интернета GPON и ТВ хватит на всех!
+												</div>
+												<div class="item__txt">
+													Привыкли жить в высоком столичном ритме, а ваш интернет за вами не успевает? Начните новый год на новой скорости!
+												</div>
+											</div>
+											<a href="#" class="btn">Подключить</a>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-4 col-sm-6 item item--btn">
+										<div class="item__inner">
+											<div class="item__img" style="background-image: url(img/content/item3.jpg);"></div>
+											<div class="item__info">
+												<div class="item__title">
+													Двойной кэшбэк с картой МТС Деньги Weekend!
+												</div>
+												<div class="item__txt">
+													Со 2 июля по 31 августа 2018 года по картам МТС Деньги Weekend начисляется повышенный кэшбэк 10% за покупки в категории «Спортивные товары и клубы»
+												</div>
+											</div>
+											<a href="#" class="btn">Подключить</a>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-4 col-sm-6 item item--btn">
+										<div class="item__inner">
+											<div class="item__img" style="background-image: url(img/content/item4.jpg);"></div>
+											<div class="item__info">
+												<div class="item__title">
+													Домашнего Интернета GPON и ТВ хватит на всех!
+												</div>
+												<div class="item__txt">
+													Станьте участником программы «МТС Smart Деньги» и не платите за связь!
+												</div>
+											</div>
+											<a href="#" class="btn">Подключить</a>
+										</div>
+									</div>
+								</div>
+								<div class="more-wrap">
+									<a href="#" class="more-btn">Показать еще</a>
+								</div>
+							</div>
+						<!--end CONTENT-PART -->
+					</div>
+				</div>
+			</div>
+			<footer class="page-footer">
+				<div class="page-footer-menu">
+					<div class="container-fluid">
+						<div class="page-footer-menu-box">
+							<div class="row page-footer-menu__wrap">
+								<div class="col-md-3 col-sm-6 page-footer-menu__item">
+									<a href="#" class="page-footer-menu__title" data-title="communications">
+										Мобильная связь
+									</a>
+									<div class="page-footer-menu__list" id="communications">
+										<a href="#" class="page-footer-menu__link">Выбрать тариф</a>
+										<a href="#" class="page-footer-menu__link">Перенос номера</a>
+										<a href="#" class="page-footer-menu__link">Акции и бонусы</a>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6 page-footer-menu__item">
+									<a href="#" class="page-footer-menu__title" data-title="internet">
+										Домашний<br> интернет и ТВ
+									</a>
+									<div class="page-footer-menu__list" id="internet">
+										<a href="#" class="page-footer-menu__link">Услуги</a>
+										<a href="#" class="page-footer-menu__link">Акции</a>
+										<a href="#" class="page-footer-menu__link">Дополнительные услуги</a>
+										<a href="#" class="page-footer-menu__link">Подключение</a>
+										<a href="#" class="page-footer-menu__link">Оборудование</a>
+										<a href="#" class="page-footer-menu__link">ТВ и фильмы</a>
+										<a href="#" class="page-footer-menu__link">Информация</a>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6 page-footer-menu__item">
+									<a href="#" class="page-footer-menu__title" data-title="services">
+										Финансовые и информационные сервисы
+									</a>
+									<div class="page-footer-menu__list" id="services">
+										<a href="#" class="page-footer-menu__link">Платежи</a>
+										<a href="#" class="page-footer-menu__link">Развлечение и информация</a>
+										<a href="#" class="page-footer-menu__link">Управление системой охраны</a>
+										<a href="#" class="page-footer-menu__link">Оплата услуг</a>
+										<a href="#" class="page-footer-menu__link">Облачные решения</a>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6 page-footer-menu__item">
+									<a href="#" class="page-footer-menu__title" data-title="help">
+										Помощь
+									</a>
+									<div class="page-footer-menu__list" id="help">
+										<a href="#" class="page-footer-menu__link">Сервисы самообслуживания</a>
+										<a href="#" class="page-footer-menu__link">Обслуживание абонентов</a>
+										<a href="#" class="page-footer-menu__link">Полезная информация</a>
+									</div>
+
+									<div class="page-footer__external">
+										<span class="page-footer-menu__title">
+											Мой МТС
+										</span>
+										<div class="external">
+											<a href="#" class="external__item">
+												<div class="external__wrap">
+													<span class="external__icon">
+														<span class="external__inner">
+															<img src="img/svg/smartphone.svg" alt="">
+														</span>
+													</span>
+													<span class="external__txt">
+														Мой МТС на App Store
+													</span>
+												</div>
+											</a>
+											<a href="#" class="external__item">
+												<div class="external__wrap">
+													<span class="external__icon">
+														<span class="external__inner">
+															<img src="img/svg/google-play.svg" alt="">
+														</span>
+													</span>
+													<span class="external__txt">
+														Мой МТС на Google play
+													</span>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bottom">
+					<div class="container-fluid">
+						<div class="bottom__wrap">
+							<div class="socials">
+								<a href="#" class="socials__item">
+									<span class="socials__icon socials__icon--inst"></span>
+								</a>
+								<a href="#" class="socials__item">
+									<span class="socials__icon socials__icon--fb"></span>
+								</a>
+								<a href="#" class="socials__item">
+									<span class="socials__icon socials__icon--vk"></span>
+								</a>
+								<a href="#" class="socials__item">
+									<span class="socials__icon socials__icon--ok"></span>
+								</a>
+								<a href="#" class="socials__item">
+									<span class="socials__icon socials__icon--tw"></span>
+								</a>
+							</div>
+							<div class="bottom-menu">
+								<a href="#" class="bottom-menu__item">Контакты</a>
+								<a href="#" class="bottom-menu__item">Карта сайта</a>
+								<a href="#" class="bottom-menu__item">Полезная информация</a>
+								<a href="#" class="bottom-menu__item">Правовая информация</a>
+								<a href="#" class="bottom-menu__item">Карта покрытия</a>
+								<a href="#" class="bottom-menu__item">Договор</a>
+							</div>
+						</div>
+						<div class="copyright">
+							&copy; 2012–2018 СООО «Мобильные ТелеСистемы». Все права защищены.
+						</div>
+					</div>
+				</div>
+			</footer>
+			
+		</div><!-- END LAYOUT-->
+
+		<script src="js/libs.min.js"></script>
+		<script src="js/interface.js"></script>
+	</body>
+</html>
