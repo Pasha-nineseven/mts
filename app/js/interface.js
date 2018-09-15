@@ -26,7 +26,7 @@ $(document).ready(function() {
 	//TOP SUBMENU
 	$("body").on("click", ".js-top-links__link--submenu", function(e){
 		e.preventDefault();
-
+		$('.top-links__submenu').fadeOut(200);
 		$(this).parents('.top-links__item--sub,.cabinet-toggle').find('.top-links__submenu').fadeToggle(200);
 	});
 	$(document).click(function (e){
