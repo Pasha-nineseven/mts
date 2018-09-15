@@ -3037,6 +3037,158 @@ a.breadcrumbs__item{
 }
 
 
+.benefits{
+	padding: 48px 0 40px;
+	h2{
+		text-align: center;
+	}
+	.main-links__wrap {
+	    justify-content: space-around;
+    	    padding: 15px 10px 0 10px;
+	}
+	.main-links__item{
+		border-right: 0;
+	}
+}
+
+.main-slider__item--middle{
+	margin-bottom: 0;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    min-height: 405px;
+	&:after {
+	    background: url(../img/content/main-bottom-gr.png) left repeat-x;
+	}
+	.page-top-image__txt{
+		position: static;
+		margin-bottom: 30px;
+	}
+	.external {
+	    justify-content: center;
+	}
+	.external__txt{
+		padding: 6px 15px 6px 14px;
+		font-size: 20px; 
+		font-family: 'corpid-regular';
+	}
+	.external__wrap{
+		border: 2px solid rgba(255,255,255,0.6);
+	}
+	.external__icon{
+		border-right: 2px solid rgba(255,255,255,0.6);
+	}
+	.external__item {
+    	padding-right: 33px;
+    	    max-width: 253px;
+    	    margin-bottom: 0;
+    	&:first-child{
+    		margin-left: 33px;
+    	}
+	}
+	.external__inner{
+		max-width: 55px;
+    	min-width: 55px;
+	}
+	.external__inner img {
+	    max-width: 30px;
+	}
+}
+
+.lifehack{
+	padding: 0 0 20px;
+}
+.lifehack__inner{
+	background: #f7f7f7;
+	    padding: 40px 49px 50px;
+	display: flex;
+	align-items:flex-start;
+	color: #4c4c4c;
+}
+
+.lifehack__view{
+	font-size: 24px;
+	padding-right: 45px;
+}
+
+.lifehack__msg{
+	font-size: 18px;
+}
+
+.info-item__content--centered{
+	justify-content: flex-start;
+}
+
+.tariff-descr{
+	border-bottom: 1px solid #e5e5e5;
+	padding-bottom: 40px;
+	margin-bottom: 37px;
+	padding-top: 49px;
+}
+
+.tariff-descr__item{
+	display: flex;
+	align-items:center;
+	margin-bottom: 19px;
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+
+.tariff-descr__title{
+	color: #4c4c4c;
+	text-transform: uppercase;
+	font-size: 15px;
+	min-width: 181px;
+	max-width: 181px;
+	margin-right: 48px;
+}
+.tariff-descr__txt{
+	font-size: 22px;
+	color: #4c4c4c;
+	font-family: 'corpid-regular';
+	display: flex;
+	align-items:center;
+}
+
+.tariff-descr__icon{
+	min-width: 35px;
+	max-width: 35px;
+	margin-right: 25px;
+	img{
+		max-width: 100%;
+		height: auto;
+		display: block;
+	}
+}
+
+.phone{
+	color: #1481b4;
+}
+
+.tariff-tabs{
+	padding-top: 54px;
+}
+
+.tariff-sum{
+	color: #4c4c4c;
+	.btn{
+		padding: 9px 44px;
+    	font-size: 18px;
+	}
+}
+
+.tariff-sum__count{
+    font-size: 36px;
+    font-family: 'corpid-regular';
+    margin-bottom: 12px;
+    padding-top: 7px;
+	span{
+		font-size: 18px;
+		font-family: 'corpid-light';
+	}
+	
+}
 
 @import "components/footer";
 

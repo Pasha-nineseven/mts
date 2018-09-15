@@ -128,6 +128,9 @@
 	.main-services__container{
 		padding: 5px;
 	}
+	.tariff-descr__txt {
+	    font-size: 18px;
+	}
 }
 
 @media screen and (max-width: 1024px){
@@ -220,6 +223,9 @@
 	}
 	.actions-filter__search {
 	    width: 100%;
+	}
+	.benefits .main-links__wrap {
+	    padding: 0;
 	}
 }
 
@@ -535,6 +541,44 @@
 			left: auto!important;
 		}
 	}
+	.tariff-descr {
+	    padding-bottom: 25px;
+	    margin-bottom: 25px;
+	    padding-top: 10px;
+	}
+	.lifehack__inner{
+		padding: 20px;
+	}
+	.main-slider__item--middle .external__txt{
+		font-size: 18px;
+	}
+}
+
+
+@media screen and (max-width: 600px){
+	.main-slider__item--middle .external__item{
+		padding: 0;
+		margin:0;
+		margin-bottom: 10px;
+		max-width: 100%;
+		min-width: 100%;
+		&:last-child{
+			margin-bottom: 0;
+		} 
+	}
+	.main-slider__item--middle .external__item:first-child {
+	    margin-left: 0;
+	}
+	.main-slider__item--middle .external__wrap{
+		padding: 10px;
+	}
+	.main-slider__item--middle .external{
+		margin-right: 0;
+	}
+	.main-slider__item--middle .page-top-image__txt {
+	    padding: 0;
+	    font-size: 32px;
+	}
 }
 
 @media screen and (max-width: 576px){
@@ -816,5 +860,33 @@
 	}
 	.info-item__media {
 	    height: 290px;
+	}
+	.lifehack__inner {
+	    flex-wrap: wrap;
+	}
+	.lifehack__view {
+	    margin-bottom: 20px;
+	    padding-right: 0;
+	    width: 100%;
+	}
+	.tariff-tabs {
+	    padding-top: 30px;
+	}
+	.tariff-descr__title {
+	    font-size: 14px;
+	    min-width: 50%;
+	    max-width: 50%;
+	    margin-right: 20px;
+	}
+	.tariff-descr__txt {
+	    font-size: 16px;
+	}
+	.tariff-descr__icon {
+	    min-width: 25px;
+	    max-width: 25px;
+	    margin-right: 15px;
+	}
+	.benefits {
+	    padding: 20px 0 20px;
 	}
 }

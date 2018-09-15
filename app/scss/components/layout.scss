@@ -49,3 +49,14 @@
 	    margin: 0 auto 40px auto;
 	}
 }
+
+
+.layout--full{
+	.page-content{
+		padding: 0;
+		>.container-fluid{
+			max-width: 100%;
+			padding: 0; 
+		}
+	}
+}
