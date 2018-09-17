@@ -4,20 +4,29 @@ $(document).ready(function() {
 	// 	e.preventDefault();
 	// })
 
-	if ($('.masking-svg').length>0) {
-		var $masking_svg = $('.masking-svg').drawsvg({
-	      	duration: 3000,
-	      	easing: 'linear'
-	    });
+	// if ($('.masking-svg').length>0) {
+	// 	var $masking_svg = $('.masking-svg').drawsvg({
+	//       	duration: 3000,
+	//       	easing: 'linear'
+	//     });
 
-		$masking_svg.drawsvg('animate');
+	// 	$masking_svg.drawsvg('animate');
+	// }
+	if ( $('.info-item__media').length ){
+		$('.info-item__media').each(function (i) {
+			$(this).paintBrush({
+				ratioSpeed: 4,
+				ratioRadius: 15,
+			});
+		});
+
 	}
 
 
 	//TOP SUBMENU
 	$("body").on("click", ".js-top-links__link--submenu", function(e){
 		e.preventDefault();
-
+		$('.top-links__submenu').fadeOut(200);
 		$(this).parents('.top-links__item--sub,.cabinet-toggle').find('.top-links__submenu').fadeToggle(200);
 	});
 	$(document).click(function (e){
@@ -240,6 +249,8 @@ $(function() {
 		$(this).toggleClass('active');
 		$(this).next('.mobile-submenu').slideToggle(200);
 	});
+
+	
 });
 
 
@@ -254,11 +265,9 @@ $(window).resize(function () {
 // });
 
 
-
-
-
-
 // functions
+
+
 function mainNewsSliderStart() {
 	var $m_a = $('.main-actions__slider');
 	if ($('.main-actions__slider').length>0) {
@@ -314,6 +323,21 @@ function mainHitSliderStart() {
 	}
 }
 
+
+function isScrolledIntoView(elem){
+    var $elem = $(elem);
+    var $window = $(window);
+
+    var docViewTop = $window.scrollTop();
+    var docViewBottom = docViewTop + $window.height();
+
+    var elemTop = $elem.offset().top;
+    var elemBottom = elemTop + $elem.height();
+
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
+
+
 // links pages
 $('body').append(
 	'<div style="position: fixed; z-index: 1005; bottom: 0; right: 0; background: #fff; border: solid 1px #828286; width: 200px;"> \
@@ -335,7 +359,8 @@ $('body').append(
 		<li><a href="country-list.html">Country-list</a></li> \
 		<li><a href="country.html">Country</a></li> \
 		<li><a href="tarify.html">Tarify</a></li> \
-		<li><a href="tariff.html">Tariff</a></li> \
+		<li><a href="tariff.html">Tariff1</a></li> \
+		<li><a href="tariff2.html">Tariff2</a></li> \
 		<li><a href="step1.html">Step1</a></li> \
 		<li><a href="step2.html">Step2</a></li> \
 		<li><a href="step3.html">Step3</a></li> \

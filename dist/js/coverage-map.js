@@ -23,10 +23,8 @@ function initMap() {
             // iconImageOffset: [-25, -65]
     	});    
 
-        //myMap.geoObjects.add(myPlacemark);
-     //    myMap.controls.add(
-	    //     new ymaps.control.ZoomControl()
-	    // );
+        //myMap.geoObjects.add(myPlacemark)
+
 		myMap.controls.add(new ymaps.control.ZoomControl({options: { position: { right: 10, top: 50 }}}));
         myMap.behaviors.disable('scrollZoom')     
     };
