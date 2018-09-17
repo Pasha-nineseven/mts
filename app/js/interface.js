@@ -249,6 +249,8 @@ $(function() {
 		$(this).toggleClass('active');
 		$(this).next('.mobile-submenu').slideToggle(200);
 	});
+
+	
 });
 
 
@@ -263,11 +265,9 @@ $(window).resize(function () {
 // });
 
 
-
-
-
-
 // functions
+
+
 function mainNewsSliderStart() {
 	var $m_a = $('.main-actions__slider');
 	if ($('.main-actions__slider').length>0) {

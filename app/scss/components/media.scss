@@ -131,6 +131,19 @@
 	.tariff-descr__txt {
 	    font-size: 18px;
 	}
+	.page-header-submenu__top {
+	    font-size: 18px;
+	    margin-bottom: 15px;
+	}
+	.page-header-submenu__link {
+	    font-size: 16px;
+	    margin-bottom: 10px;
+	}
+	.page-header-submenu__col {
+	    padding: 25px 15px 0 15px;
+	    min-width: 180px;
+	    margin-bottom: 20px;
+	}
 }
 
 @media screen and (max-width: 1024px){
