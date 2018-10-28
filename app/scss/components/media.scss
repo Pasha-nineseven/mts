@@ -290,6 +290,10 @@
 		padding-left: 0;
 		min-height: inherit;
 	}
+	.toggle-all {
+	    right: 42px;
+	    top: 27px;
+	}
 }
 
 @media screen and (max-width: 900px){
@@ -579,6 +583,10 @@
 	    max-width: 100%;
 	    padding-left: 15px;
 	    padding-right: 15px;
+	}
+	.toggle-all {
+	    right: 23px;
+	    top: 10px;
 	}
 }
 

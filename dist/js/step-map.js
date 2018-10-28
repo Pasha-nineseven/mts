@@ -18,7 +18,7 @@ function initMap() {
             	// balloonContentBody: 'Адрес',
             },{
             iconLayout: 'default#image',
-            iconImageHref: "/img/content/c-label.png", 
+            iconImageHref: "img/content/c-label.png", 
             iconImageSize: [36,53],
             iconImageOffset: [-17, -48]
     	}); 
@@ -56,7 +56,7 @@ function initMap() {
 			return {
 				//preset: 'islands#redDotIcon'
 				iconLayout: 'default#image',
-	            iconImageHref: "/img/content/c-label.png", 
+	            iconImageHref: "img/content/c-label.png", 
 	            iconImageSize: [36,53],
             	iconImageOffset: [-17, -48]
 			};

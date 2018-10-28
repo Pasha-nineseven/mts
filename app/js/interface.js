@@ -108,7 +108,20 @@ $(document).ready(function() {
 		e.preventDefault();
 		$(this).parents('.accordeon__item').toggleClass('active');
 		$(this).next('.accordeon__info').slideToggle();
-	})
+	});
+
+	$("body").on("click", ".toggle-all", function(e){
+		e.preventDefault();
+		$(this).toggleClass('active');
+		$('.accordeon__item').toggleClass('active');
+		$('.accordeon__info').slideToggle();
+	});
+
+	$("body").on("click", ".accordeon-inner__question", function(e){
+		e.preventDefault();
+		$(this).toggleClass('active');
+		$(this).next('.accordeon-inner__answer').slideToggle();
+	});
 
 	//MENU-MOBILE
     $('body').on('click','.js-menu-btn', function(e){
