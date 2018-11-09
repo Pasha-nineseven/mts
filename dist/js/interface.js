@@ -12,6 +12,30 @@ $(document).ready(function() {
 
 	// 	$masking_svg.drawsvg('animate');
 	// }
+
+	if (window.location.hash === '#msg') {
+	    $.magnificPopup.open({
+			items: {
+			    src: '#msg'
+			},
+			type: 'inline',
+			removalDelay: 500,
+			fixedContentPos: false,
+			callbacks: {
+				// beforeOpen: function() {
+				// 	this.st.mainClass = this.st.el.attr('data-effect');
+				// },
+				open: function(){
+					$('body').addClass('noscroll');
+			    },
+			    close: function() {
+	                 $('body').removeClass('noscroll');
+	            }
+			},
+		});
+	}
+
+
 	if ( $('.info-item__media').length ){
 		$('.info-item__media').each(function (i) {
 			$(this).paintBrush({
