@@ -392,6 +392,7 @@ $('body').append(
 		#pages li { margin: 5px 0; } \
 	</style> \
 	<ol id="pages"> \
+		<li><a href="text-aside.html">Text-aside</a></li> \
 		<li><a href="text.html">Text</a></li> \
 		<li><a href="text2.html">Text-2</a></li> \
 		<li><a href="text3.html">Text-3</a></li> \

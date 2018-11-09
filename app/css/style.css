@@ -4007,6 +4007,11 @@ input[type=file]::-webkit-file-upload-button {
 .menu-mobile-secondary {
   background: #f2f4f6;
   padding: 10px 20px; }
+  .menu-mobile-secondary .top-links__link {
+    display: block;
+    padding: 6px 0;
+    color: #4c4c4c;
+    color: #000; }
 
 .menu-mobile-secondary__link {
   display: block;
@@ -4590,7 +4595,8 @@ a.breadcrumbs__item {
   padding-top: 110px; }
   .main-slider__info h1 {
     margin-bottom: 12px;
-    line-height: 1.1; }
+    line-height: 1.1;
+    color: #000; }
   .main-slider__info .btn {
     font-size: 18px;
     padding: 9px 49px; }
