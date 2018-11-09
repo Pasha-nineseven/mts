@@ -572,16 +572,18 @@ a.breadcrumbs__item{
 }
 .main-slider__info{
 	max-width: 50%;
-	color: #fff;
+	color: #000;
 	padding-top: 110px;
 	h1{
 		 margin-bottom: 12px;
 		 line-height: 1.1;
-		 color: #000;
 	}
 	.btn{
 		font-size: 18px;
 		    padding: 9px 49px;
+	}
+	&.main-slider__info--white{
+		color: #fff;
 	}
 }
 
