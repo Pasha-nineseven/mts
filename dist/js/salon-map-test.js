@@ -136,46 +136,6 @@ function initPharmaciesListMap() {
 		// 	console.log(placemark.length);
 		// });
 
-		mapBounds = myMap.getBounds();
-		mapBotLeft = mapBounds[0],
-		mapTopRight = mapBounds[1];
-
-		console.log(mapBotLeft);
-		console.log(mapTopRight);
-
-		// Создаем прямоугольник с помощью вспомогательного класса.
-		myRectangle = new ymaps.Rectangle([
-		// Задаем координаты диагональных углов прямоугольника.
-		mapBotLeft,
-		mapTopRight
-		], {
-		//Свойства
-
-		}, {
-		// Опции.
-		// Цвет и прозрачность заливки.
-		fillColor: '#7df9ff33',
-		// Дополнительная прозрачность заливки..
-		// Итоговая прозрачность будет не #33(0.2), а 0.1(0.2*0.5).
-		fillOpacity: 0.5,
-		// Цвет обводки.
-		strokeColor: '#0000FF',
-		// Прозрачность обводки.
-		strokeOpacity: 0.5,
-		// Ширина линии.
-		strokeWidth: 2,
-		// Радиус скругления углов.
-		// Данная опция принимается только прямоугольником.
-		borderRadius: 6
-		});
-		myMap.geoObjects.add( myRectangle );
-
-
-
-
-
-
-
 		// Вешаем обработчик на метку
 		placemark.events.add('click', function (e) {
 			console.log(item.id);

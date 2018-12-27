@@ -7969,7 +7969,30 @@ a.breadcrumbs__item {
     padding-right: 15px; }
   .toggle-all {
     right: 23px;
-    top: 10px; } }
+    top: 10px; }
+  .map-wrap-place {
+    height: auto;
+    margin-bottom: 0; }
+  #salon-map {
+    position: static;
+    height: 400px;
+    margin-bottom: 10px; }
+  .map-change-salon {
+    display: none; }
+  .salon-select {
+    top: 0;
+    max-width: 100%; }
+  .salon-select__count {
+    padding: 10px 20px 10px 40px; }
+  .salon-select__count:before {
+    left: 20px; }
+  .salon-select__item {
+    margin: 0 20px;
+    padding: 8px 0 8px;
+    font-size: 16px; }
+  .salon-select__list {
+    max-height: 300px;
+    padding-top: 0; } }
 
 @media screen and (max-width: 600px) {
   .main-slider__item--middle .external__item {
