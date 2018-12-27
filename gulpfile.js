@@ -35,6 +35,7 @@ gulp.task('scripts', function(){
         'app/libs/tooltip/tooltipster.bundle.min.js',
         'app/libs/mask/jquery.maskedinput.min.js',
         'app/libs/paintbrush/paintbrush.js',
+        'app/libs/scroll/scrollTo.js',
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
