@@ -70,8 +70,10 @@ function initPharmaciesListMap() {
 		// Создание макета содержимого балуна.
 		balloonContentLayout = ymaps.templateLayoutFactory.createClass(
 			'<div class="ph-balloon">\
-				<div class="label-time">' + item.time + '</div>\
+				<div class="label-net">' + item.net + '</div>\
 				<div class="label-address">' + item.city + ', ' + item.address + '</div>' + metroDiv +'\
+				<div class="label-time">' + item.time + '</div>\
+				<div class="label-phone">' + item.phone + '</div>\
 			</div>'
 		),
 
@@ -111,9 +113,11 @@ function initPharmaciesListMap() {
 			setTimeout(function(){
 			  	myMap.balloon.open(item.center,
 			  		'<div class="ph-balloon">\
-						<div class="label-time">' + item.time + '</div>\
+			  			<div class="label-net">' + item.net + '</div>\
 						<div class="label-address">' + item.city + ', ' + item.address + '</div>\
+						<div class="label-time">' + item.time + '</div>\
 						<div class="salon-select__metro">' + item.metro + '</div>\
+						<div class="label-phone">' + item.phone + '</div>\
 					</div>', {
 			        //closeButton: false
 			    });

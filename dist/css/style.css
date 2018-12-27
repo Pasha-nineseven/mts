@@ -6506,9 +6506,6 @@ a.breadcrumbs__item {
   transition: all 0.3s ease;
   margin-bottom: 2px; }
 
-.salon-select__metro {
-  margin-bottom: 2px; }
-
 .ymaps-2-1-68-balloon__content {
   font: inherit;
   font-size: 14px !important;
@@ -6526,7 +6523,7 @@ a.breadcrumbs__item {
 .ymaps-2-1-68-balloon__content {
   font-family: inherit !important; }
 
-.label-time {
+.label-net {
   color: #ff010b;
   font-size: 18px !important;
   margin-bottom: 10px;
