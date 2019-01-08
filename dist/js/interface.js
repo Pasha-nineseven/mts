@@ -192,6 +192,17 @@ $(document).ready(function() {
    			delay: 100,
 		});
 	};
+	if ($('.tooltip-content').length>0) {
+		$ ( '.tooltip-content' ). tooltipster ({ 
+    		functionInit : function ( instance , helper ) { var content = $ ( helper . origin ). find ( '.tooltip_content' ). detach (); 
+        		instance . content ( content );
+        	},
+        	distance: 0,
+        	contentAsHTML:true,
+        	interactive: true,
+        });
+	};
+
 
 
 	//PHONE-MASK
