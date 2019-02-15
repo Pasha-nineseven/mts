@@ -182,7 +182,10 @@ $(document).ready(function() {
 
 	//SELECT-CUSTOM
 	if ($('.fs').length>0) {
-		$('.fs').styler();
+		setTimeout(function() {
+		 	$('.fs').styler();
+		}, 100)
+		
 	}
 
 	//TOOLTIP
@@ -330,6 +333,18 @@ $(function() {
 	});
 
 	
+
+
+
+
+
+
+	//MOBILE-ASIDE-TOGGLE
+	$("body").on("click", ".js-page-aside-mobile__toggle", function(e){
+		e.preventDefault();
+		$(this).toggleClass('active');
+		$('.page-aside-mobile__list').slideToggle();
+	});
 });
 
 
@@ -345,7 +360,15 @@ $(window).resize(function () {
 
 
 // functions
-
+$(function(){
+    $('.tab-select-outer-single select').on('change', function () {
+        var url = $(this).val(); // get selected value
+        if (url) { // require a URL
+            window.location = url; // redirect
+        }
+        return false;
+    });
+});
 
 function mainNewsSliderStart() {
 	var $m_a = $('.main-actions__slider');
