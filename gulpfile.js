@@ -43,11 +43,14 @@ gulp.task('scripts', function(){
 });
 
 gulp.task('css-libs', ['sass'], function() {
-    return gulp.src('app/css/libs.css')
-        .pipe(cssnano())
-        .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest('app/css'))
-        .pipe(gulp.dest('dist/css'))
+    return gulp.src([
+        'app/css/libs.css',
+        'app/css/style.css',
+    ])
+    .pipe(cssnano())
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('app/css'))
+    .pipe(gulp.dest('dist/css'))
 });
 
 gulp.task('browser-sync', function() {
@@ -60,23 +63,70 @@ gulp.task('browser-sync', function() {
 });
 
 
-// gulp.task('fileinclude', function () {
-//     gulp.src('app/*.html')
-//         .pipe(fileinclude({
-//           prefix: '@@',
-//           basepath: '@file'
-//         }))
-//         .pipe(gulp.dest('app/*.html'));
-//         // dist?
-// });
-
-
-gulp.task('watch', ['browser-sync','css-libs', 'scripts',], function() {
+gulp.task('watch', ['browser-sync','css-libs', 'scripts','scripts-interface','scripts-coverage-map','scripts-cities','scripts-salon-map-test','scripts-map-list-search','scripts-step-map'], function() {
     gulp.watch('app/scss/*.scss', ['sass']); // Наблюдение за sass файлами
     // Наблюдение за другими типами файлов
     gulp.watch('app/*.html', browserSync.reload);
     gulp.watch('app/js/**/*.js', browserSync.reload);
 });
+
+//SCRIPTS INTERFACE
+gulp.task('scripts-interface', function(){
+    return gulp.src([
+        'app/js/interface.js',
+    ])
+    .pipe(concat('interface.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('app/js'))
+});
+
+//SCRIPTS INTERFACE
+gulp.task('scripts-coverage-map', function(){
+    return gulp.src([
+        'app/js/coverage-map.js',
+    ])
+    .pipe(concat('coverage-map.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('app/js'))
+});
+
+//SCRIPTS INTERFACE
+gulp.task('scripts-cities', function(){
+    return gulp.src([
+        'app/js/cities.js',
+    ])
+    .pipe(concat('cities.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('app/js'))
+});
+//SCRIPTS INTERFACE
+gulp.task('scripts-salon-map-test', function(){
+    return gulp.src([
+        'app/js/salon-map-test.js',
+    ])
+    .pipe(concat('salon-map-test.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('app/js'))
+});
+//SCRIPTS INTERFACE
+gulp.task('scripts-map-list-search', function(){
+    return gulp.src([
+        'app/js/map-list-search.js',
+    ])
+    .pipe(concat('map-list-search.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('app/js'))
+});
+//SCRIPTS INTERFACE
+gulp.task('scripts-step-map', function(){
+    return gulp.src([
+        'app/js/step-map.js',
+    ])
+    .pipe(concat('step-map.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('app/js'))
+});
+
 
 
 //CLEAN
@@ -98,7 +148,7 @@ gulp.task('img', function(){
 });
 
 //BUILD version
-gulp.task('build', ['clean', 'img', 'sass', 'css-libs', 'scripts'], function() {
+gulp.task('build', ['clean', 'img', 'sass', 'css-libs', 'scripts','scripts-interface','scripts-coverage-map','scripts-cities','scripts-salon-map-test','scripts-map-list-search','scripts-step-map'], function() {
 
     var buildCss = gulp.src([
         'app/css/style.css',
@@ -124,4 +174,4 @@ gulp.task('clear', function() {
 
 
 //DEFAULT
-gulp.task('default', ['watch','browser-sync','css-libs', 'scripts',]);
+gulp.task('default', ['watch','browser-sync','css-libs', 'scripts']);
